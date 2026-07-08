@@ -11,7 +11,7 @@ window.ASTRO_GALLERY = [
   {
     title: "C/2025 A6 · Lemmon",
     image: "assets/img/astro/a6_lemmon.JPG",
-    thumb: "assets/img/astro/thumbs/a6_lemmon_thumb.JPG",
+    thumb: "assets/img/astro/thumbs/a6_lemmon_thumb.jpg",
     type: "Comet",
     capture: "C/2025 A6 Lemmon",
     description: "Comet C/2025 A6 Lemmon captured during one of my observing nights."
