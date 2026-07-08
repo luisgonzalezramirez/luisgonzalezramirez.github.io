@@ -10,7 +10,7 @@ window.ASTRO_GALLERY = [
 
   {
     title: "C/2025 A6 · Lemmon",
-    image: "assets/img/astro/a6_lemmon.jpg",
+    image: "assets/img/astro/a6_lemmon.JPG",
     type: "Comet",
     capture: "C/2025 A6 Lemmon",
     description: "Comet C/2025 A6 Lemmon captured during one of my observing nights."
@@ -60,7 +60,7 @@ window.ASTRO_GALLERY = [
     image: "assets/img/astro/m16_eagle_nebula.jpg",
     thumb: "assets/img/astro/thumbs/m16_eagle_nebula_thumb.jpg",
     type: "Emission nebula and young cluster",
-    capture: "2 × 1 min · ISO 3200",
+    capture: "2 x 1 min · ISO 3200",
     description: "The Eagle Nebula hosts active star formation and the famous dusty pillars sculpted by massive young stars."
   },
   {
@@ -80,7 +80,7 @@ window.ASTRO_GALLERY = [
     description: "The expanding remnant of a historical supernova, powered at its centre by the Crab pulsar."
   },
   {
-    title: "M81–M82",
+    title: "M81-M82",
     image: "assets/img/astro/m81_m82.jpg",
     thumb: "assets/img/astro/thumbs/m81_m82_thumb.jpg",
     type: "Galaxy pair",
@@ -92,7 +92,7 @@ window.ASTRO_GALLERY = [
     image: "assets/img/astro/m51_whirlpool.jpg",
     thumb: "assets/img/astro/thumbs/m51_whirlpool_thumb.jpg",
     type: "Interacting galaxy system",
-    capture: "2 × 1 min · ISO 3200",
+    capture: "2 x 1 min · ISO 3200",
     description: "The Whirlpool Galaxy, NGC 5194, interacting with its companion NGC 5195."
   },
   {
@@ -100,7 +100,7 @@ window.ASTRO_GALLERY = [
     image: "assets/img/astro/m51_galaxies_field.jpg",
     thumb: "assets/img/astro/thumbs/m51_galaxies_field_thumb.jpg",
     type: "Galaxy field",
-    capture: "2 × 1 min · ISO 3200",
+    capture: "2 x 1 min · ISO 3200",
     description: "A wider field around M51, where small background galaxies such as IC 4263 and IC 4278 can appear near the main Whirlpool system."
   },
   {
@@ -108,7 +108,7 @@ window.ASTRO_GALLERY = [
     image: "assets/img/astro/M51_zoom_IC4278.jpg",
     thumb: "assets/img/astro/thumbs/m51_zoom_ic4278_thumb.jpg",
     type: "Background galaxy near M51",
-    capture: "2 × 1 min · ISO 3200",
+    capture: "2 x 1 min · ISO 3200",
     description: "Zoomed crop around the M51 field highlighting IC 4278, a faint background galaxy projected close to the Whirlpool Galaxy field."
   }
 ];
