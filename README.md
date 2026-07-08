@@ -14,13 +14,6 @@ This folder contains the updated landing page and asset structure.
 
 ## Files to replace with real content
 
-### Astrophotography images
-Replace the placeholder JPGs in:
-
-```text
-assets/img/astro/
-```
-
 Keep the same filenames or edit `assets/js/gallery.js`.
 
 ### PDFs
