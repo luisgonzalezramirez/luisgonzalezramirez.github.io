@@ -1,0 +1,9 @@
+{
+  "radius_pc": 400.0,
+  "yaml_file": "solar_map_400pc_data.yaml",
+  "handbook_html_loaded": true,
+  "handbook_catalog_groups": 97,
+  "handbook_bubbles_exported": 209,
+  "h5_status": "H5 not found: map3D_GAIAdr2_feb2019.h5",
+  "dust_clouds_exported": 0
+}

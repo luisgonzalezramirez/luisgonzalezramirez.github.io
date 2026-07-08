@@ -1,0 +1,46 @@
+cluster,name,query_name,ra_deg,dec_deg,distance_pc,vmag,spectral_type,member_note
+Pleiades,Alcyone,* 25 Tau,56.8711667,24.1051389,136.2,2.87,B7IIIe,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Atlas,* 27 Tau,57.2905833,24.0534167,136.2,3.62,B8III,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Pleione,* 28 Tau,57.2966667,24.1366667,136.2,5.05,B8Vpe,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Electra,* 17 Tau,56.2189167,24.1133333,136.2,3.70,B6IIIe,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Maia,* 20 Tau,56.4566667,24.3677500,136.2,3.87,B8III,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Merope,* 23 Tau,56.5815417,23.9483611,136.2,4.18,B6IVe,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Taygeta,* 19 Tau,56.3019167,24.4672778,136.2,4.30,B6V,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Celaeno,* 16 Tau,56.2008750,24.2894722,136.2,5.45,B7IV,Curated J2000 seed; also resolvable by SIMBAD.
+Pleiades,Asterope,* 21 Tau,56.4770000,24.5545000,136.2,5.76,B8V,Curated J2000 seed; also resolvable by SIMBAD.
+Hyades,γ Tau,* gam Tau,65.733000,15.627000,47.0,3.65,K0III,Curated bright Hyades member.
+Hyades,δ1 Tau,* del01 Tau,66.372000,17.928000,47.0,3.77,K0III,Curated bright Hyades member.
+Hyades,δ2 Tau,* del02 Tau,66.024000,17.444000,47.0,4.8,A7V,Curated bright Hyades member.
+Hyades,ε Tau,* eps Tau,67.154000,19.180000,47.0,3.53,G9III,Curated bright Hyades member.
+Hyades,θ1 Tau,* tet01 Tau,67.165000,15.871000,47.0,3.84,K0III,Curated bright Hyades member.
+Hyades,θ2 Tau,* tet02 Tau,67.144000,15.962000,47.0,3.4,A7III,Curated bright Hyades member.
+Hyades,71 Tau,* 71 Tau,66.615000,15.600000,47.0,4.48,F0V,Curated bright Hyades member.
+Hyades,80 Tau,* 80 Tau,68.980000,15.870000,47.0,5.58,F0V,Curated bright Hyades member.
+Praesepe,ε Cnc,* eps Cnc,129.800000,19.900000,187.0,6.3,A5m,Curated bright Praesepe member/candidate.
+Praesepe,δ Cnc,* del Cnc,,,,3.94,K0III,Located in the Praesepe field; resolve with SIMBAD and verify membership flag later.
+Praesepe,γ Cnc,* gam Cnc,,,,4.67,A1IV,Located in the Praesepe field; resolve with SIMBAD and verify membership flag later.
+Praesepe,η Cnc,* eta Cnc,,,,5.33,K3III,Named bright Praesepe member/candidate; resolve with SIMBAD.
+Praesepe,θ Cnc,* tet Cnc,,,,5.35,K5III,Named bright Praesepe member/candidate; resolve with SIMBAD.
+Praesepe,39 Cnc,* 39 Cnc,129.920000,19.680000,187.0,6.39,F,Curated bright Praesepe member/candidate.
+Praesepe,42 Cnc,* 42 Cnc,130.470000,19.670000,187.0,6.82,A,Curated bright Praesepe member/candidate.
+α Per,Mirfak,* alf Per,51.080700,49.861200,175.0,1.79,F5Ib,Anchor star of the alpha Persei cluster.
+α Per,δ Per,* del Per,47.042200,47.787600,175.0,3.01,B5III,Curated bright alpha Persei member/candidate.
+α Per,ψ Per,* psi Per,55.731100,48.151100,175.0,4.23,B5Ve,Curated bright alpha Persei member/candidate.
+α Per,29 Per,* 29 Per,55.594600,50.688700,175.0,5.16,B3V,Curated bright alpha Persei member/candidate.
+α Per,34 Per,* 34 Per,58.533000,49.132300,175.0,4.67,B3V,Curated bright alpha Persei member/candidate.
+α Per,48 Per,* 48 Per,63.500000,47.783300,175.0,4.04,B3Ve,Curated bright alpha Persei member/candidate.
+IC 2391,ο Vel,* omi Vel,130.025000,-52.921000,150.0,3.6,B3IV,Anchor bright star of IC 2391.
+IC 2391,HD 74560,HD 74560,131.231000,-53.709000,150.0,5.1,B,Curated bright IC 2391 member/candidate.
+IC 2391,HD 74044,HD 74044,129.780000,-53.265000,150.0,5.0,B,Curated bright IC 2391 member/candidate.
+IC 2391,HD 74146,HD 74146,130.154000,-53.445000,150.0,5.2,B,Curated bright IC 2391 member/candidate.
+IC 2391,HD 73722,HD 73722,129.065000,-53.466000,150.0,6.0,A,Curated bright IC 2391 member/candidate.
+IC 2602,θ Car,* tet Car,160.739000,-64.394000,149.0,2.74,B0Vp,Anchor bright star of IC 2602.
+IC 2602,p Car,* p Car,160.884000,-64.874000,149.0,3.3,B,Curated bright IC 2602 member/candidate.
+IC 2602,PP Car,V* PP Car,160.742000,-64.644000,149.0,3.3,B,Curated bright IC 2602 member/candidate.
+IC 2602,HD 92385,HD 92385,159.477000,-64.184000,149.0,5.4,B/A,Curated bright IC 2602 member/candidate.
+IC 2602,HD 93194,HD 93194,160.865000,-65.185000,149.0,5.6,B/A,Curated bright IC 2602 member/candidate.
+NGC 2451A,c Pup,* c Pup,116.313000,-36.720000,188.0,3.6,K2.5Ib,Bright star in the NGC 2451A field.
+NGC 2451A,HD 63032,HD 63032,116.840000,-38.232000,188.0,6.2,B/A,Curated bright NGC 2451A member/candidate.
+NGC 2451A,HD 63465,HD 63465,117.901000,-37.718000,188.0,6.4,A/F,Curated bright NGC 2451A member/candidate.
+NGC 2451A,HD 62991,HD 62991,116.729000,-37.827000,188.0,6.4,A/F,Curated bright NGC 2451A member/candidate.
+NGC 2451A,HD 62893,HD 62893,116.363000,-38.146000,188.0,6.5,A/F,Curated bright NGC 2451A member/candidate.

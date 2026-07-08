@@ -1,0 +1,8 @@
+name,query_name,kind,age_myr,distance_pc,ra_deg,dec_deg,l_deg,b_deg,radius_x_pc,radius_y_pc,radius_z_pc,star_count,description
+Pleiades,Melotte 22,open_cluster,125,136.2,56.6328148,24.2262130,166.6,-23.5,5.2,3.6,2.8,180,Young open cluster. Bright labelled members use curated J2000 sky positions projected at the cluster mean distance; unresolved members are visual only.
+Hyades,Hyades,open_cluster,650,47.0,,,180.0,-22.0,16,10,8,130,Very nearby dispersed open cluster. Its apparent spread is intentionally larger than the compact Pleiades population.
+Praesepe,M 44,open_cluster,700,187.0,,,205.9,32.5,11,7,6,140,"Old nearby open cluster, shown as a compact stellar population."
+α Per,α Per,open_cluster,85,175.0,,,146.7,-6.3,13,8,7,150,"Young open cluster around Mirfak, represented by a broad stellar population."
+IC 2391,IC 2391,open_cluster,50,150.0,,,270.4,-6.8,10,6,5,90,Young southern open cluster. The member stars are schematic bright anchors inside the cluster population.
+IC 2602,IC 2602,open_cluster,45,149.0,,,289.6,-4.9,11,7,5,110,"Young southern open cluster, also known as the Southern Pleiades."
+NGC 2451A,NGC 2451A,open_cluster,50,188.0,,,252.0,-7.0,12,7,5,95,Young nearby open cluster candidate/complex shown as a compact local stellar population.

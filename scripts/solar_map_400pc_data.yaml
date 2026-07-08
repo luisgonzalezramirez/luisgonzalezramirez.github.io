@@ -1,0 +1,3198 @@
+CLEAN_SYSTEM_CACHE: nearby_systems_400pc.ecsv
+CLEAN_BRIGHT_STAR_CACHE: bright_named_stars_400pc_v3.ecsv
+CLEAN_NEBULA_CACHE: nearby_nebulae_400pc.ecsv
+CLEAN_ASSOC_MEMBER_CACHE: association_members_400pc.ecsv
+CLEAN_GAIA_DENSITY_CACHE: gaia_density_400pc.ecsv
+NEARBY_SYSTEMS:
+- name: Melotte 22
+  label: Pleiades
+  kind: open_cluster
+  age_myr: 125
+  resolver: simbad
+  distance_pc: 136.2
+- name: Hyades
+  label: Hyades
+  kind: open_cluster
+  age_myr: 650
+  resolver: simbad
+  distance_pc: 47.0
+- name: Melotte 20
+  label: "$\alpha$ Per"
+  kind: open_cluster
+  age_myr: 85
+  resolver: simbad
+  distance_pc: 175.0
+- name: IC 2391
+  label: IC 2391
+  kind: open_cluster
+  age_myr: 50
+  resolver: simbad
+  distance_pc: 150.0
+- name: IC 2602
+  label: IC 2602
+  kind: open_cluster
+  age_myr: 45
+  resolver: simbad
+  distance_pc: 149.0
+- name: NGC 2451A
+  label: NGC 2451A
+  kind: open_cluster
+  resolver: manual
+  age_myr: 50
+  distance_pc: 188.0
+  ra_deg: 115.4
+  dec_deg: -37.9
+- name: Mamajek 2
+  label: Mamajek 2
+  kind: open_cluster
+  resolver: manual
+  age_myr: 135
+  distance_pc: 170.0
+  ra_deg: 161.0
+  dec_deg: -81.0
+- name: Platais 8
+  label: Platais 8
+  kind: open_cluster
+  resolver: manual
+  age_myr: 400
+  distance_pc: 196.0
+  ra_deg: 139.0
+  dec_deg: -57.0
+- name: Cl Alessi 13
+  simbad_name: Cl Alessi 13
+  label: Cl Alessi 13
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 120
+  distance_pc: 190.0
+  ra_deg: 104.0
+  dec_deg: -64.0
+- name: eta Cha
+  label: $\eta$ Cha
+  kind: association
+  age_myr: 8
+  resolver: simbad
+  distance_pc: 94.0
+- name: epsilon Cha
+  label: $\epsilon$ Cha
+  kind: association
+  age_myr: 5
+  resolver: manual
+  distance_pc: 102.0
+  ra_deg: 176.0
+  dec_deg: -78.5
+- name: Beta Pic MG
+  label: "$\beta$ Pic MG"
+  kind: association
+  age_myr: 24
+  resolver: manual
+  distance_pc: 40.0
+  ra_deg: 87.0
+  dec_deg: -51.0
+- name: TW Hya Assoc
+  label: TWA
+  kind: association
+  age_myr: 10
+  resolver: manual
+  distance_pc: 60.0
+  ra_deg: 165.0
+  dec_deg: -34.0
+- name: AB Dor MG
+  label: AB Dor
+  kind: association
+  age_myr: 150
+  resolver: manual
+  distance_pc: 35.0
+  ra_deg: 82.2
+  dec_deg: -65.4
+- name: 32 Ori Group
+  label: 32 Ori
+  kind: association
+  age_myr: 24
+  resolver: manual
+  distance_pc: 93.0
+  ra_deg: 82.5
+  dec_deg: 6.0
+- name: Tuc-Hor
+  label: Tuc-Hor
+  kind: association
+  age_myr: 45
+  resolver: manual
+  distance_pc: 48.0
+  ra_deg: 15.0
+  dec_deg: -60.0
+- name: Carina
+  label: Carina
+  kind: association
+  age_myr: 45
+  resolver: manual
+  distance_pc: 85.0
+  ra_deg: 104.0
+  dec_deg: -58.0
+- name: Volans-Carina
+  label: Vol-Car
+  kind: association
+  age_myr: 90
+  resolver: manual
+  distance_pc: 86.0
+  ra_deg: 141.0
+  dec_deg: -66.0
+- name: Upper Scorpius
+  label: Upper Sco
+  kind: sco_cen
+  age_myr: 11
+  resolver: manual
+  distance_pc: 145.0
+  ra_deg: 243.0
+  dec_deg: -23.0
+- name: Upper Centaurus Lupus
+  label: UCL
+  kind: sco_cen
+  age_myr: 16
+  resolver: manual
+  distance_pc: 140.0
+  ra_deg: 230.0
+  dec_deg: -42.0
+- name: Lower Centaurus Crux
+  label: LCC
+  kind: sco_cen
+  age_myr: 17
+  resolver: manual
+  distance_pc: 118.0
+  ra_deg: 180.0
+  dec_deg: -60.0
+- name: M 44
+  label: Praesepe
+  kind: open_cluster
+  age_myr: 700
+  resolver: simbad
+  distance_pc: 187.0
+- name: Platais 3
+  label: Platais 3
+  kind: open_cluster
+  age_myr: 120
+  resolver: manual
+  distance_pc: 125.0
+  ra_deg: 108.5
+  dec_deg: -52.0
+- name: Platais 9
+  label: Platais 9
+  kind: open_cluster
+  age_myr: 110
+  resolver: manual
+  distance_pc: 95.0
+  ra_deg: 141.5
+  dec_deg: -51.5
+- name: Blanco 1
+  label: Blanco 1
+  kind: open_cluster
+  age_myr: 120
+  resolver: manual
+  distance_pc: 232.0
+  ra_deg: 1.1
+  dec_deg: -29.9
+BRIGHT_NAMED_STARS:
+- name: Sirius
+  label: Sirius
+  distance_pc: 2.64
+  vmag: -1.46
+- name: Canopus
+  label: Canopus
+  distance_pc: 95.0
+  vmag: -0.74
+- name: Arcturus
+  label: Arcturus
+  distance_pc: 11.3
+  vmag: -0.05
+- name: Vega
+  label: Vega
+  distance_pc: 7.68
+  vmag: 0.03
+- name: Capella
+  label: Capella
+  distance_pc: 12.9
+  vmag: 0.08
+- name: Rigel
+  label: Rigel
+  distance_pc: 264.0
+  vmag: 0.13
+- name: Procyon
+  label: Procyon
+  distance_pc: 3.51
+  vmag: 0.34
+- name: Achernar
+  label: Achernar
+  distance_pc: 42.8
+  vmag: 0.46
+- name: Betelgeuse
+  label: Betelgeuse
+  distance_pc: 197.0
+  vmag: 0.5
+- name: Altair
+  label: Altair
+  distance_pc: 5.13
+  vmag: 0.77
+- name: Acrux
+  label: Acrux
+  distance_pc: 98.0
+  vmag: 0.76
+- name: Aldebaran
+  label: Aldebaran
+  distance_pc: 20.4
+  vmag: 0.86
+- name: Antares
+  label: Antares
+  distance_pc: 170.0
+  vmag: 1.06
+- name: Spica
+  label: Spica
+  distance_pc: 77.0
+  vmag: 0.98
+- name: Pollux
+  label: Pollux
+  distance_pc: 10.4
+  vmag: 1.14
+- name: Fomalhaut
+  label: Fomalhaut
+  distance_pc: 7.7
+  vmag: 1.16
+- name: Mimosa
+  label: Mimosa
+  distance_pc: 85.0
+  vmag: 1.25
+- name: Regulus
+  label: Regulus
+  distance_pc: 24.3
+  vmag: 1.35
+- name: Adhara
+  label: Adhara
+  distance_pc: 132.0
+  vmag: 1.5
+- name: Castor
+  label: Castor
+  distance_pc: 15.6
+  vmag: 1.58
+- name: Shaula
+  label: Shaula
+  distance_pc: 175.0
+  vmag: 1.62
+- name: Bellatrix
+  label: Bellatrix
+  distance_pc: 77.0
+  vmag: 1.64
+- name: Elnath
+  label: Elnath
+  distance_pc: 41.0
+  vmag: 1.65
+- name: Miaplacidus
+  label: Miaplacidus
+  distance_pc: 34.0
+  vmag: 1.67
+- name: Alnitak
+  label: Alnitak
+  distance_pc: 250.0
+  vmag: 1.74
+- name: Alnair
+  label: Alnair
+  distance_pc: 31.0
+  vmag: 1.74
+- name: Alioth
+  label: Alioth
+  distance_pc: 25.3
+  vmag: 1.77
+- name: Dubhe
+  label: Dubhe
+  distance_pc: 38.0
+  vmag: 1.79
+- name: Mirfak
+  label: Mirfak
+  distance_pc: 155.0
+  vmag: 1.79
+- name: Wezen
+  label: Wezen
+  distance_pc: 300.0
+  vmag: 1.83
+- name: Kaus Australis
+  label: Kaus Australis
+  distance_pc: 44.0
+  vmag: 1.85
+- name: Alkaid
+  label: Alkaid
+  distance_pc: 31.0
+  vmag: 1.86
+- name: Sargas
+  label: Sargas
+  distance_pc: 83.0
+  vmag: 1.86
+- name: Menkalinan
+  label: Menkalinan
+  distance_pc: 25.0
+  vmag: 1.9
+- name: Atria
+  label: Atria
+  distance_pc: 120.0
+  vmag: 1.91
+- name: Alhena
+  label: Alhena
+  distance_pc: 33.5
+  vmag: 1.93
+- name: Peacock
+  label: Peacock
+  distance_pc: 55.0
+  vmag: 1.94
+- name: Mirzam
+  label: Mirzam
+  distance_pc: 150.0
+  vmag: 1.98
+- name: Alphard
+  label: Alphard
+  distance_pc: 54.0
+  vmag: 1.98
+- name: Polaris
+  label: Polaris
+  distance_pc: 133.0
+  vmag: 1.98
+- name: Hamal
+  label: Hamal
+  distance_pc: 20.2
+  vmag: 2.0
+- name: Diphda
+  label: Diphda
+  distance_pc: 29.5
+  vmag: 2.04
+- name: Nunki
+  label: Nunki
+  distance_pc: 69.0
+  vmag: 2.05
+- name: Mizar
+  label: Mizar
+  distance_pc: 25.0
+  vmag: 2.23
+- name: Denebola
+  label: Denebola
+  distance_pc: 11.0
+  vmag: 2.14
+- name: Algieba
+  label: Algieba
+  distance_pc: 39.9
+  vmag: 2.01
+- name: Zosma
+  label: Zosma
+  distance_pc: 17.9
+  vmag: 2.56
+- name: Phecda
+  label: Phecda
+  distance_pc: 25.5
+  vmag: 2.44
+- name: Merak
+  label: Merak
+  distance_pc: 24.6
+  vmag: 2.37
+- name: Megrez
+  label: Megrez
+  distance_pc: 24.7
+  vmag: 3.31
+- name: Kochab
+  label: Kochab
+  distance_pc: 40.0
+  vmag: 2.08
+- name: Eltanin
+  label: Eltanin
+  distance_pc: 47.0
+  vmag: 2.24
+- name: Rastaban
+  label: Rastaban
+  distance_pc: 118.0
+  vmag: 2.79
+- name: Rasalhague
+  label: Rasalhague
+  distance_pc: 14.3
+  vmag: 2.07
+- name: Cebalrai
+  label: Cebalrai
+  distance_pc: 25.0
+  vmag: 2.76
+- name: Sabik
+  label: Sabik
+  distance_pc: 27.0
+  vmag: 2.43
+- name: Enif
+  label: Enif
+  distance_pc: 211.0
+  vmag: 2.39
+- name: Markab
+  label: Markab
+  distance_pc: 42.9
+  vmag: 2.49
+- name: Scheat
+  label: Scheat
+  distance_pc: 60.0
+  vmag: 2.42
+- name: Alpheratz
+  label: Alpheratz
+  distance_pc: 29.8
+  vmag: 2.06
+- name: Caph
+  label: Caph
+  distance_pc: 16.8
+  vmag: 2.27
+- name: Schedar
+  label: Schedar
+  distance_pc: 70.0
+  vmag: 2.24
+- name: Cih
+  label: Cih
+  distance_pc: 170.0
+  vmag: 2.15
+- name: Saiph
+  label: Saiph
+  distance_pc: 198.0
+  vmag: 2.07
+- name: Meissa
+  label: Meissa
+  distance_pc: 170.0
+  vmag: 3.39
+- name: Cursa
+  label: Cursa
+  distance_pc: 27.0
+  vmag: 2.78
+- name: Zaurak
+  label: Zaurak
+  distance_pc: 62.0
+  vmag: 2.95
+- name: Ankaa
+  label: Ankaa
+  distance_pc: 23.6
+  vmag: 2.4
+- name: Rukbat
+  label: Rukbat
+  distance_pc: 52.0
+  vmag: 3.97
+- name: Lesath
+  label: Lesath
+  distance_pc: 177.0
+  vmag: 2.7
+- name: Girtab
+  label: Girtab
+  distance_pc: 142.0
+  vmag: 2.39
+- name: Dschubba
+  label: Dschubba
+  distance_pc: 150.0
+  vmag: 2.29
+- name: Larawag
+  label: Larawag
+  distance_pc: 174.0
+  vmag: 2.29
+- name: Unukalhai
+  label: Unukalhai
+  distance_pc: 22.7
+  vmag: 2.63
+- name: Albireo
+  label: Albireo
+  distance_pc: 133.0
+  vmag: 3.05
+- name: Tarazed
+  label: Tarazed
+  distance_pc: 135.0
+  vmag: 2.72
+- name: Alshain
+  label: Alshain
+  distance_pc: 13.7
+  vmag: 3.71
+- name: Gienah Cygni
+  label: Gienah Cyg
+  distance_pc: 22.0
+  vmag: 2.48
+- name: Sadalsuud
+  label: Sadalsuud
+  distance_pc: 164.0
+  vmag: 2.87
+- name: Sadalmelik
+  label: Sadalmelik
+  distance_pc: 160.0
+  vmag: 2.95
+- name: Sualocin
+  label: Sualocin
+  distance_pc: 73.0
+  vmag: 3.77
+- name: Rotanev
+  label: Rotanev
+  distance_pc: 31.0
+  vmag: 3.63
+- name: Anser
+  label: Anser
+  distance_pc: 90.0
+  vmag: 4.45
+- name: Okab
+  label: Okab
+  distance_pc: 25.5
+  vmag: 2.99
+- name: Nash
+  label: Nash
+  distance_pc: 29.0
+  vmag: 2.99
+- name: Cebalrai
+  label: Cebalrai
+  distance_pc: 25.0
+  vmag: 2.76
+FORCE_BRIGHT_STAR_NAMES:
+- $\gamma$ Ara
+- $\zeta$ Cep
+- 102 Her
+- 51 Pegasi
+- Ainalrami
+- Alderamin
+- Alfirk
+- Algol
+- Almach
+- Altair
+- Antares
+- Arcturus
+- Azmidi
+- Betelgeuse
+- Canopus
+- Capella
+- Errai
+- Gomeisa
+- HD 102839
+- HD 115211
+- HD 137071
+- HD 47667
+- Kepler-186
+- Kepler-20
+- Kepler-22
+- Kepler-442
+- Mebsuta
+- Mekbuda
+- Mirach
+- Miram
+- Polaris
+- RY Dra
+- Sirius
+- Spica
+- TOI-3457
+- UZ Cet
+- Vega
+- WASP-121
+INNER_30PC_LABELLED_NAMES:
+- Altair
+- Arcturus
+- Capella
+- Sirius
+- Vega
+EXCLUDED_BRIGHT_STAR_NAMES:
+- Achernar
+- Acrux
+- Algieba
+- Alhena
+- Alkaid
+- Alnair
+- Alphard
+- Anser
+- Atria
+- Dschubba
+- Elnath
+- Eltanin
+- Gomeisa
+- Kaus Australis
+- Larawag
+- Lesath
+- Markab
+- Miaplacidus
+- Mimosa
+- Mirach
+- Nunki
+- Peacock
+- Rastaban
+- Rotanev
+- Sadalmelik
+- Sargas
+- Scheat
+- Schedar
+- Shaula
+- Sualocin
+- Tarazed
+- Zaurak
+NEBULA_LABELS_NO_LEADERS_400PC:
+- Aquila south rift
+- Cassiopeia dark clouds
+- Cepheus CO void
+- Cepheus Flare
+- Near Perseus dark clouds
+- ORI OB1
+- Orion molecular clouds
+- Perseus cloud
+- VEL OB2
+MANUAL_STAR_OFFSETS:
+  Vega:
+  - - 2
+    - 28
+  Altair:
+  - - 14
+    - 18
+  Arcturus:
+  - - 18
+    - 8
+  Capella:
+  - - -28
+    - 6
+  Sirius:
+  - - -12
+    - -8
+  Zaurak:
+  - - 14
+    - -12
+  Achernar:
+  - - 20
+    - -14
+  - - 30
+    - -20
+  - - 42
+    - -28
+  Fomalhaut:
+  - - 18
+    - -14
+  - - 28
+    - -20
+  - - 38
+    - -28
+  Miaplacidus:
+  - - 12
+    - -30
+  Schedar:
+  - - -34
+    - 20
+  - - -46
+    - 28
+  - - -58
+    - 36
+  Scheat:
+  - - 0
+    - 18
+  Rastaban:
+  - - 14
+    - 10
+  - - 22
+    - 18
+  - - 32
+    - 26
+  Polaris:
+  - - 0
+    - 20
+  Albireo:
+  - - 8
+    - 8
+  - - 12
+    - 12
+  - - 16
+    - 16
+  Tarazed:
+  - - 12
+    - 14
+  - - 22
+    - 22
+  - - 32
+    - 30
+  Sualocin:
+  - - 18
+    - -8
+  - - 28
+    - -14
+  - - 38
+    - -20
+  Betelgeuse:
+  - - 10
+    - -10
+  Mirfak:
+  - - 14
+    - 6
+  - - 16
+    - 10
+  - - 12
+    - 12
+  Adhara:
+  - - 18
+    - -10
+  Mirzam:
+  - - 10
+    - -8
+  Canopus:
+  - - 0
+    - -10
+  Antares:
+  - - 10
+    - -2
+  Spica:
+  - - 22
+    - 14
+  Sun:
+  - - 12
+    - -10
+  - - 14
+    - -12
+  - - 10
+    - -14
+  Bellatrix:
+  - - -24
+    - 18
+  Mimosa:
+  - - 12
+    - -18
+  Atria:
+  - - 0
+    - 18
+  Dschubba:
+  - - -12
+    - 14
+  Alderamin:
+  - - 12
+    - 12
+  Errai:
+  - - 12
+    - 10
+  Alfirk:
+  - - 12
+    - 12
+  $\zeta$ Cep:
+  - - 10
+    - 10
+  Algol:
+  - - -14
+    - 10
+  Almach:
+  - - 12
+    - 4
+  Mirach:
+  - - 12
+    - -10
+  Mebsuta:
+  - - 12
+    - 10
+  Mekbuda:
+  - - 12
+    - -4
+  Gomeisa:
+  - - 12
+    - 10
+  Miram:
+  - - 10
+    - 2
+  RY Dra:
+  - - 8
+    - 10
+  102 Her:
+  - - 8
+    - 8
+  $\gamma$ Ara:
+  - - 5
+    - 8
+  Azmidi:
+  - - 0
+    - 10
+  HD 47667:
+  - - 0
+    - -10
+  UZ Cet:
+  - - -8
+    - 0
+  Ainalrami:
+  - - 10
+    - 10
+  HD 137709:
+  - - 8
+    - 8
+  HD 115211:
+  - - 8
+    - 3
+  HD 102839:
+  - - 8
+    - -22
+  Sheliak:
+  - - 10
+    - -30
+  HD 137071:
+  - - -12
+    - -10
+  - - -16
+    - -12
+  51 Pegasi:
+  - - 10
+    - 10
+  Kepler-186:
+  - - 12
+    - 3
+  WASP-121:
+  - - 8
+    - 8
+  Kepler-20:
+  - - 8
+    - 8
+  Kepler-22:
+  - - 8
+    - 8
+  TOI-3457:
+  - - 12
+    - -10
+  - - 16
+    - -12
+  Kepler-442:
+  - - 8
+    - 0
+  - - 10
+    - 2
+  - - 8
+    - -2
+  Sadalsuud:
+  - - -5
+    - -20
+  Enif:
+  - - 10
+    - 0
+  - - 14
+    - 0
+  - - 18
+    - 0
+  TOI 3457:
+  - - 12
+    - -10
+  - - 16
+    - -12
+MANUAL_LABEL_OVERRIDES:
+  32 Ori:
+    dx: -18
+    dy: 0
+    ha: right
+    va: center
+    fontsize: 9.2
+  Zaurak:
+    dx: 0
+    dy: -12
+    ha: left
+    va: top
+  Adhara:
+    dx: 0
+    dy: -10
+    ha: center
+    va: top
+  Mirzam:
+    dx: 0
+    dy: 10
+    ha: center
+    va: bottom
+  Canopus:
+    dx: 0
+    dy: -10
+    ha: center
+    va: top
+  Arcturus:
+    dx: 8
+    dy: -14
+    ha: left
+    va: top
+  Vega:
+    dx: 8
+    dy: 24
+    ha: center
+    va: bottom
+  Atria:
+    dx: 0
+    dy: 20
+    ha: center
+    va: bottom
+  Miaplacidus:
+    dx: 10
+    dy: -28
+    ha: left
+    va: top
+  Scheat:
+    dx: 0
+    dy: 18
+    ha: center
+    va: bottom
+  Betelgeuse:
+    dx: 0
+    dy: -12
+    ha: center
+    va: top
+  Bellatrix:
+    dx: -24
+    dy: 10
+    ha: right
+    va: bottom
+  Antares:
+    dx: 10
+    dy: -2
+    ha: left
+    va: center
+  Dschubba:
+    dx: -14
+    dy: 12
+    ha: right
+    va: bottom
+  $\beta$ Pic MG:
+    x: -15
+    y: 40
+    ha: center
+    va: bottom
+    fontsize: 8.8
+  Tuc-Hor:
+    dx: 10
+    dy: 4
+    ha: left
+    va: bottom
+    fontsize: 8.8
+  LCC:
+    dx: 15
+    dy: 0
+    ha: left
+    va: center
+    fontsize: 8.8
+  Carina:
+    dx: -24
+    dy: -4
+    ha: right
+    va: center
+    fontsize: 8.8
+  TWA:
+    dx: -2
+    dy: 4
+    ha: center
+    va: bottom
+    fontsize: 8.8
+  UCL:
+    dx: -4
+    dy: 20
+    ha: right
+    va: bottom
+    fontsize: 8.8
+  Upper Sco:
+    x: 102
+    y: 2
+    ha: left
+    va: center
+    fontsize: 8.8
+  $\rho$ Oph complex:
+    x: 182
+    y: 18
+    ha: left
+    va: center
+  Ophiuchus dark clouds:
+    x: 120
+    y: -38
+    ha: left
+    va: center
+    fontsize: 8.6
+  Pipe nebula:
+    x: 156
+    y: 30
+    ha: left
+    va: center
+    fontsize: 8.6
+  Saiph:
+    dx: 0
+    dy: -10
+    ha: center
+    va: top
+  Mirfak:
+    dx: 0
+    dy: -14
+    ha: center
+    va: top
+  Helix:
+    dx: 13
+    dy: 8
+    ha: left
+    va: bottom
+    fontsize: 8.6
+  Cepheus Flare:
+    x: -118
+    y: 317
+    ha: center
+    va: center
+    fontsize: 7.2
+  VEL OB2:
+    x: 0
+    y: -360
+    ha: center
+    va: top
+    fontsize: 7.2
+  Spica:
+    dx: 12
+    dy: -24
+    ha: left
+    va: top
+  Chamaeleon complex:
+    dx: 0
+    dy: -32
+    ha: center
+    va: top
+    fontsize: 7.2
+  Cassiopeia dark clouds:
+    x: -202
+    y: 250
+    ha: left
+    va: center
+    fontsize: 7.2
+  Vela SNR:
+    dx: 10
+    dy: 10
+    ha: left
+    va: bottom
+    fontsize: 7.0
+  Geminga SNR:
+    dx: -10
+    dy: -10
+    ha: right
+    va: top
+    fontsize: 7.0
+  Orion nebula:
+    dx: 10
+    dy: -10
+    ha: left
+    va: top
+    fontsize: 7.0
+  California nebula:
+    dx: 10
+    dy: 10
+    ha: left
+    va: bottom
+    fontsize: 7.0
+  Meissa:
+    dx: 12
+    dy: 0
+    ha: left
+    va: center
+  Orion molecular clouds:
+    x: -346
+    y: -214
+    ha: center
+    va: top
+    fontsize: 7.2
+  ORI OB1:
+    x: -310
+    y: -35
+    ha: center
+    va: center
+    fontsize: 7.2
+  Perseus cloud:
+    x: -325
+    y: 128
+    ha: right
+    va: center
+  Cepheus CO void:
+    x: -151
+    y: 270
+    ha: left
+    va: center
+    fontsize: 7.2
+  Enif:
+    dx: 10
+    dy: 0
+    ha: left
+    va: center
+  Capella:
+    x: -70
+    y: 24
+    ha: center
+    va: top
+  Sadalsuud:
+    dx: 10
+    dy: 8
+    ha: left
+    va: bottom
+  Sheliak:
+    dx: 10
+    dy: -16
+    ha: left
+    va: top
+  Kepler-442:
+    x: 160
+    y: 338
+    ha: center
+    va: bottom
+  Taurus dark clouds:
+    x: -250
+    y: 74
+    ha: left
+    va: center
+    fontsize: 7.2
+  Near Perseus dark clouds:
+    x: -377.0
+    y: 156.0
+    ha: left
+    va: center
+    fontsize: 7.2
+  Aquila south rift:
+    x: 205
+    y: 94
+    ha: center
+    va: center
+    fontsize: 7.2
+  $\eta$ Cha:
+    dx: 8
+    dy: 2
+    ha: right
+    va: bottom
+    fontsize: 8.8
+  $\epsilon$ Cha:
+    dx: 0
+    dy: -4
+    ha: right
+    va: bottom
+    fontsize: 8.8
+  Miram:
+    x: -215.0
+    y: 115.0
+    ha: left
+    va: center
+  RY Dra:
+    x: -175.0
+    y: 210.0
+    ha: left
+    va: bottom
+  102 Her:
+    dx: 8
+    dy: 8
+    ha: left
+    va: bottom
+  $\gamma$ Ara:
+    dx: 5
+    dy: 8
+    ha: left
+    va: bottom
+  Azmidi:
+    dx: 0
+    dy: 10
+    ha: center
+    va: bottom
+  HD 47667:
+    dx: 0
+    dy: -10
+    ha: center
+    va: top
+  UZ Cet:
+    dx: -8
+    dy: 0
+    ha: right
+    va: center
+  Polaris:
+    dx: 0
+    dy: 20
+    ha: center
+    va: bottom
+  Albireo:
+    dx: 8
+    dy: 8
+    ha: left
+    va: bottom
+  Vol-Car:
+    dx: -18
+    dy: 8
+    ha: right
+    va: bottom
+    fontsize: 8.8
+  HD 137071:
+    dx: -12
+    dy: -10
+    ha: right
+    va: top
+  TOI-3457:
+    dx: 12
+    dy: -10
+    ha: left
+    va: top
+  TOI 3457:
+    dx: 12
+    dy: -10
+    ha: left
+    va: top
+  Taurus complex:
+    x: -205
+    y: 0
+    ha: center
+    va: center
+    fontsize: 7.2
+SYSTEM_POSITION_OVERRIDES_400PC:
+  Platais 3:
+    x: -120.0
+    y: 116.0
+  Platais 8:
+    x: 34.0
+    y: -132.0
+  Platais 9:
+    x: 0.0
+    y: -200.0
+SYSTEM_POSITION_SHIFTS_400PC:
+  UPK 545:
+    dx: 10.0
+    dy: 8.0
+  32 Ori:
+    dx: -10.0
+    dy: 0.0
+SYSTEM_LABEL_OFFSETS:
+  32 Ori:
+  - - 0
+    - -6
+  $\beta$ Pic MG:
+  - - -2
+    - 15
+  AB Dor:
+  - - 0
+    - -26
+  Tuc-Hor:
+  - - 6
+    - 14
+  Carina:
+  - - -24
+    - -4
+  Vol-Car:
+  - - -18
+    - 8
+  TWA:
+  - - -2
+    - 4
+  $\eta$ Cha:
+  - - 12
+    - -18
+  $\epsilon$ Cha:
+  - - 16
+    - -24
+  UCL:
+  - - 14
+    - 22
+  LCC:
+  - - 15
+    - 0
+  Upper Sco:
+  - - -10
+    - 10
+UI_TEXT:
+  en:
+    title: Nearby stellar systems and bright stars within {radius:.0f} pc
+    systems: Systems
+    code: code
+    name: name
+    age: age
+    symbols: Symbols
+    open_clusters: Open clusters
+    sco_cen: Sco-Cen subgroups
+    age_colour: Age colour
+    age_lt100: < 100 Myr
+    age_100_600: 100–600 Myr
+    age_ge600: ≥ 600 Myr
+    stellar_colour: Stellar colour
+    temperature: $T_{\rm eff}$ [K]
+    projected_regions: Projected regions
+    projected_regions_note: Approximate spatial extent in the X–Y plane
+    note: Star labels and system legend give signed $Z$ relative to the Galactic plane
+      (pc).
+    associations: Associations / moving groups
+  es:
+    title: Sistemas estelares cercanos y estrellas brillantes dentro de {radius:.0f}
+      pc
+    systems: Sistemas
+    code: ' '
+    name: nombre
+    age: edad
+    symbols: Símbolos
+    open_clusters: Cúmulos abiertos
+    sco_cen: Subgrupos de Sco-Cen
+    age_colour: Color de edad
+    age_lt100: < 100 Myr
+    age_100_600: 100–600 Myr
+    age_ge600: ≥ 600 Myr
+    stellar_colour: Color estelar
+    temperature: $T_{\rm eff}$ [K]
+    projected_regions: Regiones proyectadas
+    projected_regions_note: Extensión espacial aproximada en el plano X–Y
+    note: Las etiquetas estelares y la leyenda de sistemas dan el valor con signo
+      de $Z$ respecto al plano galáctico (pc).
+    associations: Asociaciones / grupos móviles
+STAR_TEFF:
+  Sirius: 9940
+  Canopus: 7350
+  Arcturus: 4286
+  Vega: 9602
+  Capella: 4970
+  Procyon: 6530
+  Achernar: 15000
+  Betelgeuse: 3500
+  Altair: 7550
+  Acrux: 28000
+  Aldebaran: 3900
+  Antares: 3500
+  Spica: 25400
+  Pollux: 4660
+  Fomalhaut: 8590
+  Mimosa: 25000
+  Regulus: 12460
+  Adhara: 22000
+  Castor: 10300
+  Shaula: 25000
+  Bellatrix: 22000
+  Elnath: 13600
+  Miaplacidus: 8300
+  Alnair: 13900
+  Alioth: 9300
+  Dubhe: 4800
+  Mirfak: 6350
+  Kaus Australis: 9900
+  Alkaid: 20000
+  Sargas: 8300
+  Menkalinan: 9350
+  Atria: 4300
+  Alhena: 9150
+  Peacock: 9900
+  Mirzam: 25000
+  Alphard: 4100
+  Polaris: 6000
+  Hamal: 4500
+  Diphda: 3800
+  Nunki: 18000
+  Mizar: 9000
+  Schedar: 4530
+  Scheat: 3800
+  Rastaban: 5150
+  Albireo: 4400
+  Tarazed: 4300
+  Sualocin: 9200
+  Zaurak: 4300
+  Saiph: 26000
+  Meissa: 30000
+  Rigel: 12100
+  Wezen: 3900
+  Miram: 4600
+  RY Dra: 3400
+  102 Her: 5000
+  $\gamma$ Ara: 4300
+  Azmidi: 5200
+  HD 47667: 5800
+  UZ Cet: 3400
+SYSTEM_SKY_REGION_SPECS:
+  Pleiades:
+    a_deg: 3.0
+    b_deg: 2.3
+    pa_deg: 25
+  Hyades:
+    a_deg: 11.0
+    b_deg: 8.0
+    pa_deg: 0
+  "$\alpha$ Per":
+    a_deg: 2.8
+    b_deg: 2.3
+    pa_deg: 10
+  IC 2391:
+    a_deg: 2.0
+    b_deg: 1.5
+    pa_deg: -10
+  IC 2602:
+    a_deg: 2.2
+    b_deg: 1.7
+    pa_deg: 5
+  NGC 2451A:
+    a_deg: 1.9
+    b_deg: 1.5
+    pa_deg: 15
+  Mamajek 2:
+    a_deg: 1.7
+    b_deg: 1.2
+    pa_deg: 10
+  Platais 8:
+    a_deg: 1.7
+    b_deg: 1.4
+    pa_deg: -20
+  Cl Alessi 13:
+    a_deg: 1.5
+    b_deg: 1.2
+    pa_deg: 0
+  $\eta$ Cha:
+    a_deg: 4.0
+    b_deg: 2.5
+    pa_deg: -10
+  $\epsilon$ Cha:
+    a_deg: 8.0
+    b_deg: 4.5
+    pa_deg: 15
+  "$\beta$ Pic MG":
+    a_deg: 14.0
+    b_deg: 7.0
+    pa_deg: -20
+  TWA:
+    a_deg: 12.0
+    b_deg: 6.0
+    pa_deg: -30
+  AB Dor:
+    a_deg: 16.0
+    b_deg: 8.0
+    pa_deg: 10
+  32 Ori:
+    a_deg: 10.0
+    b_deg: 8.2
+    pa_deg: 10
+  Tuc-Hor:
+    a_deg: 16.0
+    b_deg: 7.5
+    pa_deg: 20
+  Carina:
+    a_deg: 13.0
+    b_deg: 7.0
+    pa_deg: -15
+  Vol-Car:
+    a_deg: 11.0
+    b_deg: 5.5
+    pa_deg: -25
+  Upper Sco:
+    a_deg: 14.0
+    b_deg: 7.0
+    pa_deg: 30
+  UCL:
+    a_deg: 18.0
+    b_deg: 8.0
+    pa_deg: 18
+  LCC:
+    a_deg: 16.0
+    b_deg: 7.5
+    pa_deg: 10
+NEBULAE:
+- name: Taurus Molecular Cloud
+  label: Taurus complex
+  resolver: manual
+  distance_pc: 145.0
+  ra_deg: 67.0
+  dec_deg: 24.0
+  a_deg: 20.0
+  b_deg: 10.0
+  pa_deg: 35.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Rho Ophiuchi Complex
+  label: $\rho$ Oph complex
+  resolver: manual
+  distance_pc: 137.0
+  ra_deg: 246.5
+  dec_deg: -24.5
+  a_deg: 9.0
+  b_deg: 5.0
+  pa_deg: -32.0
+  color: '#6f8fc9'
+  kind: nebula
+- name: Lupus Clouds
+  label: Lupus clouds
+  resolver: manual
+  distance_pc: 160.0
+  ra_deg: 236.0
+  dec_deg: -39.0
+  a_deg: 16.0
+  b_deg: 7.0
+  pa_deg: -25.0
+  color: '#6882b4'
+  kind: nebula
+- name: Chamaeleon Complex
+  label: Chamaeleon complex
+  resolver: manual
+  distance_pc: 190.0
+  ra_deg: 170.0
+  dec_deg: -78.0
+  a_deg: 13.0
+  b_deg: 8.0
+  pa_deg: 8.0
+  color: '#7ea18a'
+  kind: nebula
+- name: Pipe Nebula
+  label: Pipe nebula
+  resolver: manual
+  distance_pc: 145.0
+  ra_deg: 260.0
+  dec_deg: -27.0
+  a_deg: 13.0
+  b_deg: 5.5
+  pa_deg: -18.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Helix Nebula
+  label: Helix
+  resolver: manual
+  distance_pc: 200.0
+  ra_deg: 337.4
+  dec_deg: -20.8
+  a_deg: 1.0
+  b_deg: 1.0
+  pa_deg: 0.0
+  color: '#58c8be'
+  kind: nebula
+  style: point
+- name: Ophiuchus Dark Clouds
+  label: Ophiuchus dark clouds
+  resolver: manual
+  distance_pc: 145.0
+  ra_deg: 247.0
+  dec_deg: -24.5
+  a_deg: 20.0
+  b_deg: 8.0
+  pa_deg: -25.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Aquila South Rift
+  label: Aquila south rift
+  resolver: manual
+  distance_pc: 180.0
+  ra_deg: 282.0
+  dec_deg: -5.0
+  a_deg: 54.0
+  b_deg: 24.0
+  pa_deg: -31.0
+  color: '#7f6b5c'
+  kind: nebula
+- name: Coalsack
+  label: Coalsack
+  resolver: manual
+  distance_pc: 180.0
+  ra_deg: 186.0
+  dec_deg: -63.0
+  a_deg: 20.0
+  b_deg: 14.0
+  pa_deg: 36.0
+  color: '#8b6b4a'
+  kind: nebula
+NEBULA_COMPONENTS:
+  $\rho$ Oph complex:
+  - ra_deg: 246.8
+    dec_deg: -24.4
+    a_deg: 5.6
+    b_deg: 3.8
+    pa_deg: -30.0
+  - ra_deg: 247.5
+    dec_deg: -20.7
+    a_deg: 3.8
+    b_deg: 2.5
+    pa_deg: -18.0
+  - ra_deg: 243.8
+    dec_deg: -23.0
+    a_deg: 3.5
+    b_deg: 2.0
+    pa_deg: -40.0
+  Pipe nebula:
+  - ra_deg: 258.6
+    dec_deg: -27.2
+    a_deg: 5.0
+    b_deg: 3.2
+    pa_deg: 18.0
+  - ra_deg: 262.4
+    dec_deg: -28.9
+    a_deg: 8.8
+    b_deg: 2.1
+    pa_deg: -26.0
+  - ra_deg: 255.8
+    dec_deg: -24.8
+    a_deg: 3.6
+    b_deg: 2.0
+    pa_deg: 10.0
+  Coalsack:
+  - ra_deg: 186.0
+    dec_deg: -63.0
+    a_deg: 16.0
+    b_deg: 12.0
+    pa_deg: 34.0
+    seed: 11
+    roughness: 0.16
+    alpha: 0.135
+  - ra_deg: 190.5
+    dec_deg: -62.0
+    a_deg: 11.0
+    b_deg: 8.5
+    pa_deg: 48.0
+    seed: 12
+    roughness: 0.2
+    alpha: 0.105
+  - ra_deg: 181.0
+    dec_deg: -64.5
+    a_deg: 9.0
+    b_deg: 7.0
+    pa_deg: 20.0
+    seed: 13
+    roughness: 0.18
+    alpha: 0.095
+  Aquila south rift:
+  - ra_deg: 295.0
+    dec_deg: 6.5
+    a_deg: 15.0
+    b_deg: 11.0
+    pa_deg: -36.0
+    seed: 31
+    roughness: 0.2
+    alpha: 0.12
+  - ra_deg: 289.0
+    dec_deg: 1.5
+    a_deg: 17.0
+    b_deg: 12.0
+    pa_deg: -34.0
+    seed: 32
+    roughness: 0.18
+    alpha: 0.125
+  - ra_deg: 282.0
+    dec_deg: -5.0
+    a_deg: 18.0
+    b_deg: 13.0
+    pa_deg: -31.0
+    seed: 33
+    roughness: 0.18
+    alpha: 0.12
+  - ra_deg: 274.5
+    dec_deg: -11.5
+    a_deg: 15.0
+    b_deg: 11.0
+    pa_deg: -28.0
+    seed: 34
+    roughness: 0.2
+    alpha: 0.105
+  - ra_deg: 267.5
+    dec_deg: -17.0
+    a_deg: 12.0
+    b_deg: 9.0
+    pa_deg: -25.0
+    seed: 35
+    roughness: 0.22
+    alpha: 0.09
+NEBULA_LABEL_OFFSETS:
+  Taurus complex:
+  - -10
+  - 0
+  $\rho$ Oph complex:
+  - 28
+  - -4
+  Lupus clouds:
+  - 26
+  - -10
+  Chamaeleon complex:
+  - 22
+  - -38
+  Pipe nebula:
+  - 30
+  - 12
+  Helix:
+  - 6
+  - 8
+  Ophiuchus dark clouds:
+  - 24
+  - -56
+  Aquila south rift:
+  - 6
+  - 10
+  Coalsack:
+  - 12
+  - -6
+  Taurus dark clouds:
+  - 4
+  - 10
+  Near Perseus dark clouds:
+  - -6
+  - 10
+  Cepheus Flare:
+  - -6
+  - 18
+  Cepheus CO void:
+  - 0
+  - -18
+  Orion molecular clouds:
+  - -6
+  - -12
+  Cassiopeia dark clouds:
+  - 100
+  - 0
+  Perseus cloud:
+  - -124
+  - -16
+  ORI OB1:
+  - -12
+  - -4
+  Vela SNR:
+  - 12
+  - 12
+  Geminga SNR:
+  - 12
+  - 12
+  Orion nebula:
+  - 10
+  - -8
+  California nebula:
+  - 12
+  - 12
+ASSOCIATION_MEMBER_SPECS:
+  $\eta$ Cha:
+  - Eta Cha
+  - RS Cha
+  - RECX 11
+  - RECX 1
+  - RECX 4
+  - RECX 9
+  $\epsilon$ Cha:
+  - HD 104237
+  - DZ Cha
+  - T Cha
+  - CP-68 1388
+  - 2MASS J12005517-7820296
+  - CD-74 673
+  $\beta$ Pic MG:
+  - beta Pictoris
+  - AU Microscopii
+  - AT Microscopii
+  - PZ Tel
+  - 51 Eridani
+  - WW PsA
+  - TX PsA
+  - V4046 Sgr
+  - HIP 29964
+  TWA:
+  - TW Hya
+  - HD 98800
+  - HR 4796A
+  - TWA 7
+  - TWA 9A
+  - TWA 13A
+  - TWA 25
+  - TWA 27
+  - TWA 30A
+  AB Dor:
+  - AB Dor
+  - AK Pic
+  - HD 25457
+  - PW And
+  - HD 36705
+  - HIP 3589
+  - HIP 18859
+  - BD-12 243
+  32 Ori:
+  - 32 Ori
+  - HD 35656
+  - HD 36338
+  - HD 35499
+  - V1874 Ori
+  - 2MASS J05363692+1300369
+  Tuc-Hor:
+  - HD 105
+  - HIP 1481
+  - HIP 1910
+  - AT Col
+  - CD-64 1208
+  - HIP 2729
+  - DX Tuc
+  - V1358 Ori
+  Carina:
+  - HD 42270
+  - HD 49855
+  - HD 83096
+  - HD 92536
+  - V1005 Ori
+  Vol-Car:
+  - HD 30951
+  - HD 29391
+  - HD 35841
+  - HD 55279
+  - c Car
+  Upper Sco:
+  - Antares
+  - delta Sco
+  - tau Sco
+  - pi Sco
+  - rho Ophiuchi
+  - nu Sco
+  - omega Sco
+  - beta Sco
+  UCL:
+  - alpha Lup
+  - beta Lup
+  - delta Lup
+  - eta Lup
+  - phi Cen
+  - chi Cen
+  - mu Lup
+  LCC:
+  - alpha Crucis
+  - beta Crucis
+  - gamma Crucis
+  - delta Crucis
+  - epsilon Cen
+  - iota Cen
+  - mu Cen
+_DUST_XY_BLOBS:
+  Aquila south rift:
+  - x: 140
+    y: 134
+    a: 44
+    b: 16
+    angle: -46
+    seed: 99901
+    alpha: 0.112
+    roughness: 0.18
+  - x: 177
+    y: 118
+    a: 46
+    b: 16
+    angle: -45
+    seed: 99902
+    alpha: 0.118
+    roughness: 0.18
+  - x: 215
+    y: 103
+    a: 49
+    b: 17
+    angle: -45
+    seed: 99903
+    alpha: 0.124
+    roughness: 0.18
+  - x: 252
+    y: 92
+    a: 50
+    b: 16
+    angle: -43
+    seed: 99904
+    alpha: 0.122
+    roughness: 0.19
+  - x: 288
+    y: 103
+    a: 52
+    b: 18
+    angle: -35
+    seed: 99905
+    alpha: 0.116
+    roughness: 0.19
+  - x: 323
+    y: 132
+    a: 54
+    b: 19
+    angle: -24
+    seed: 99906
+    alpha: 0.11
+    roughness: 0.2
+  - x: 344
+    y: 164
+    a: 48
+    b: 19
+    angle: -12
+    seed: 99907
+    alpha: 0.104
+    roughness: 0.2
+  - x: 358
+    y: 195
+    a: 34
+    b: 17
+    angle: -10
+    seed: 99908
+    alpha: 0.094
+    roughness: 0.21
+  - x: 322
+    y: 86
+    a: 42
+    b: 15
+    angle: -10
+    seed: 99909
+    alpha: 0.096
+    roughness: 0.2
+  - x: 356
+    y: 102
+    a: 34
+    b: 14
+    angle: 4
+    seed: 99910
+    alpha: 0.09
+    roughness: 0.2
+  - x: 171
+    y: 119
+    a: 14
+    b: 6
+    angle: -44
+    seed: 99911
+    alpha: 0.195
+    roughness: 0.24
+    color: '#5c3c24'
+  - x: 239
+    y: 98
+    a: 16
+    b: 6
+    angle: -42
+    seed: 99912
+    alpha: 0.198
+    roughness: 0.24
+    color: '#5a3921'
+  - x: 315
+    y: 138
+    a: 17
+    b: 7
+    angle: -30
+    seed: 99913
+    alpha: 0.172
+    roughness: 0.24
+    color: '#5a3921'
+  - x: 338
+    y: 106
+    a: 14
+    b: 6
+    angle: -8
+    seed: 99914
+    alpha: 0.16
+    roughness: 0.24
+    color: '#5b3921'
+  Ophiuchus dark clouds:
+  - x: 137
+    y: 24
+    a: 19
+    b: 12
+    angle: 72
+    seed: 2001
+    alpha: 0.135
+    roughness: 0.18
+  - x: 139
+    y: -3
+    a: 28
+    b: 14
+    angle: 78
+    seed: 2002
+    alpha: 0.155
+    roughness: 0.18
+  - x: 137
+    y: -32
+    a: 26
+    b: 13
+    angle: 82
+    seed: 2003
+    alpha: 0.145
+    roughness: 0.2
+  - x: 124
+    y: -55
+    a: 24
+    b: 10
+    angle: 72
+    seed: 2004
+    alpha: 0.115
+    roughness: 0.22
+  - x: 134
+    y: 8
+    a: 8.5
+    b: 5.0
+    angle: 65
+    seed: 2011
+    alpha: 0.225
+    roughness: 0.25
+    color: '#55351f'
+  - x: 142
+    y: -18
+    a: 9.5
+    b: 5.5
+    angle: 80
+    seed: 2012
+    alpha: 0.23
+    roughness: 0.25
+    color: '#5b3921'
+  - x: 132
+    y: -43
+    a: 8.0
+    b: 4.8
+    angle: 70
+    seed: 2013
+    alpha: 0.2
+    roughness: 0.25
+    color: '#5c3c24'
+  Coalsack:
+  - x: 72
+    y: -176
+    a: 28
+    b: 12.0
+    angle: 18
+    seed: 3001
+    alpha: 0.12
+    roughness: 0.18
+  - x: 96
+    y: -165
+    a: 30
+    b: 12.5
+    angle: 24
+    seed: 3002
+    alpha: 0.135
+    roughness: 0.18
+  - x: 121
+    y: -152
+    a: 24
+    b: 10.5
+    angle: 32
+    seed: 3003
+    alpha: 0.115
+    roughness: 0.2
+  - x: 91
+    y: -168
+    a: 11
+    b: 6.0
+    angle: 22
+    seed: 3011
+    alpha: 0.195
+    roughness: 0.25
+    color: '#5e3f24'
+  - x: 112
+    y: -156
+    a: 9
+    b: 5.2
+    angle: 32
+    seed: 3012
+    alpha: 0.18
+    roughness: 0.25
+    color: '#5a3921'
+  Near Perseus dark clouds:
+  - x: -365
+    y: 170
+    a: 38
+    b: 14
+    angle: 3
+    seed: 9921
+    alpha: 0.11
+    roughness: 0.18
+  - x: -335
+    y: 162
+    a: 35
+    b: 13
+    angle: 8
+    seed: 9922
+    alpha: 0.118
+    roughness: 0.18
+  - x: -315
+    y: 154
+    a: 16
+    b: 8
+    angle: 12
+    seed: 9923
+    alpha: 0.1
+    roughness: 0.19
+  - x: -338
+    y: 162
+    a: 10
+    b: 5
+    angle: 8
+    seed: 9924
+    alpha: 0.178
+    roughness: 0.24
+    color: '#5e3f24'
+  Cassiopeia dark clouds:
+  - x: -225
+    y: 236
+    a: 54
+    b: 18
+    angle: 2
+    seed: 99701
+    alpha: 0.112
+    roughness: 0.18
+  - x: -178
+    y: 248
+    a: 58
+    b: 19
+    angle: 6
+    seed: 99702
+    alpha: 0.12
+    roughness: 0.18
+  - x: -130
+    y: 258
+    a: 60
+    b: 20
+    angle: 10
+    seed: 99703
+    alpha: 0.118
+    roughness: 0.18
+  - x: -82
+    y: 260
+    a: 46
+    b: 17
+    angle: 8
+    seed: 99704
+    alpha: 0.104
+    roughness: 0.19
+  - x: -168
+    y: 246
+    a: 16
+    b: 7
+    angle: 7
+    seed: 99711
+    alpha: 0.18
+    roughness: 0.24
+    color: '#5a3921'
+  - x: -108
+    y: 256
+    a: 13
+    b: 6
+    angle: 8
+    seed: 99712
+    alpha: 0.155
+    roughness: 0.24
+    color: '#5e3f24'
+  Cepheus Flare:
+  - x: -206
+    y: 338
+    a: 48
+    b: 17
+    angle: 18
+    seed: 9201
+    alpha: 0.118
+    roughness: 0.18
+  - x: -167
+    y: 325
+    a: 54
+    b: 19
+    angle: 8
+    seed: 9202
+    alpha: 0.124
+    roughness: 0.18
+  - x: -120
+    y: 317
+    a: 60
+    b: 21
+    angle: -3
+    seed: 9203
+    alpha: 0.128
+    roughness: 0.18
+  - x: -70
+    y: 318
+    a: 56
+    b: 20
+    angle: -14
+    seed: 9204
+    alpha: 0.12
+    roughness: 0.19
+  - x: -28
+    y: 306
+    a: 40
+    b: 16
+    angle: -22
+    seed: 9205
+    alpha: 0.102
+    roughness: 0.2
+  - x: -132
+    y: 292
+    a: 42
+    b: 15
+    angle: -10
+    seed: 9206
+    alpha: 0.104
+    roughness: 0.2
+  - x: -114
+    y: 319
+    a: 18
+    b: 7
+    angle: -6
+    seed: 9211
+    alpha: 0.19
+    roughness: 0.24
+    color: '#5a3921'
+  - x: -54
+    y: 321
+    a: 16
+    b: 6
+    angle: -18
+    seed: 9212
+    alpha: 0.172
+    roughness: 0.24
+    color: '#5e3f24'
+  Cepheus CO void:
+  - x: -188
+    y: 270
+    a: 44
+    b: 15
+    angle: 12
+    seed: 9301
+    alpha: 0.102
+    roughness: 0.18
+  - x: -150
+    y: 257
+    a: 44
+    b: 15
+    angle: 3
+    seed: 9302
+    alpha: 0.106
+    roughness: 0.18
+  - x: -109
+    y: 274
+    a: 48
+    b: 16
+    angle: -7
+    seed: 9303
+    alpha: 0.108
+    roughness: 0.18
+  - x: -64
+    y: 286
+    a: 40
+    b: 14
+    angle: -14
+    seed: 9304
+    alpha: 0.094
+    roughness: 0.19
+  - x: -205
+    y: 247
+    a: 32
+    b: 11
+    angle: 18
+    seed: 9305
+    alpha: 0.09
+    roughness: 0.2
+  Taurus complex:
+  - x: -245
+    y: 126
+    a: 58
+    b: 18
+    angle: -18
+    seed: 5801
+    alpha: 0.11
+    roughness: 0.18
+  - x: -212
+    y: 102
+    a: 56
+    b: 18
+    angle: -24
+    seed: 5802
+    alpha: 0.12
+    roughness: 0.18
+  - x: -178
+    y: 77
+    a: 50
+    b: 17
+    angle: -30
+    seed: 5803
+    alpha: 0.115
+    roughness: 0.19
+  - x: -146
+    y: 53
+    a: 44
+    b: 16
+    angle: -34
+    seed: 5804
+    alpha: 0.105
+    roughness: 0.19
+  - x: -216
+    y: 96
+    a: 15
+    b: 7
+    angle: -26
+    seed: 5811
+    alpha: 0.19
+    roughness: 0.24
+    color: '#5a3921'
+  - x: -170
+    y: 62
+    a: 12
+    b: 6
+    angle: -32
+    seed: 5812
+    alpha: 0.17
+    roughness: 0.24
+    color: '#5f4126'
+  - x: -188
+    y: 42
+    a: 34
+    b: 13
+    angle: -28
+    seed: 5813
+    alpha: 0.1
+    roughness: 0.2
+  - x: -152
+    y: 24
+    a: 28
+    b: 12
+    angle: -34
+    seed: 5814
+    alpha: 0.095
+    roughness: 0.2
+  Perseus cloud:
+  - x: -128
+    y: 102
+    a: 34
+    b: 13
+    angle: 28
+    seed: 5401
+    alpha: 0.12
+    roughness: 0.18
+  - x: -98
+    y: 84
+    a: 30
+    b: 11
+    angle: 36
+    seed: 5402
+    alpha: 0.12
+    roughness: 0.18
+  - x: -110
+    y: 92
+    a: 11
+    b: 5
+    angle: 30
+    seed: 5411
+    alpha: 0.19
+    roughness: 0.25
+    color: '#5a3921'
+  Orion molecular clouds:
+  - x: -364
+    y: -111
+    a: 52
+    b: 20
+    angle: 18
+    seed: 9701
+    alpha: 0.11
+    roughness: 0.18
+  - x: -325
+    y: -95
+    a: 50
+    b: 18
+    angle: 28
+    seed: 9702
+    alpha: 0.118
+    roughness: 0.18
+  - x: -286
+    y: -77
+    a: 44
+    b: 16
+    angle: 38
+    seed: 9703
+    alpha: 0.114
+    roughness: 0.19
+  - x: -338
+    y: -197
+    a: 74
+    b: 24
+    angle: 84
+    seed: 9704
+    alpha: 0.106
+    roughness: 0.18
+  - x: -305
+    y: -225
+    a: 56
+    b: 20
+    angle: 84
+    seed: 9705
+    alpha: 0.098
+    roughness: 0.2
+  - x: -276
+    y: -245
+    a: 38
+    b: 15
+    angle: 86
+    seed: 9706
+    alpha: 0.09
+    roughness: 0.2
+  - x: -306
+    y: -96
+    a: 16
+    b: 7
+    angle: 32
+    seed: 9711
+    alpha: 0.19
+    roughness: 0.25
+    color: '#5a3921'
+  - x: -331
+    y: -206
+    a: 18
+    b: 7
+    angle: 82
+    seed: 9712
+    alpha: 0.168
+    roughness: 0.25
+    color: '#5e3f24'
+  ORI OB1:
+  - x: -250
+    y: -145
+    a: 95
+    b: 60
+    angle: 28
+    seed: 5601
+    alpha: 0.0
+    roughness: 0.1
+    color: '#b24b4b'
+  - x: -210
+    y: -110
+    a: 55
+    b: 32
+    angle: 25
+    seed: 5602
+    alpha: 0.0
+    roughness: 0.15
+    color: '#d06060'
+  - x: -290
+    y: -255
+    a: 92
+    b: 42
+    angle: 86
+    seed: 5603
+    alpha: 0.0
+    roughness: 0.12
+    color: '#bf5656'
+  - x: -255
+    y: -240
+    a: 50
+    b: 24
+    angle: 84
+    seed: 5604
+    alpha: 0.0
+    roughness: 0.15
+    color: '#d76c6c'
+  Taurus dark clouds:
+  - x: -258
+    y: 78
+    a: 38
+    b: 18
+    angle: 8
+    seed: 99801
+    alpha: 0.11
+    roughness: 0.15
+  - x: -228
+    y: 100
+    a: 42
+    b: 20
+    angle: 22
+    seed: 99802
+    alpha: 0.116
+    roughness: 0.15
+  - x: -198
+    y: 128
+    a: 42
+    b: 21
+    angle: 42
+    seed: 99803
+    alpha: 0.114
+    roughness: 0.15
+  - x: -170
+    y: 160
+    a: 40
+    b: 20
+    angle: 58
+    seed: 99804
+    alpha: 0.106
+    roughness: 0.15
+  - x: -146
+    y: 186
+    a: 34
+    b: 18
+    angle: 70
+    seed: 99805
+    alpha: 0.096
+    roughness: 0.15
+  - x: -158
+    y: 106
+    a: 32
+    b: 15
+    angle: 18
+    seed: 99806
+    alpha: 0.096
+    roughness: 0.16
+  - x: -225
+    y: 102
+    a: 13
+    b: 6
+    angle: 25
+    seed: 99811
+    alpha: 0.172
+    roughness: 0.22
+    color: '#5a3921'
+  - x: -178
+    y: 152
+    a: 11
+    b: 5
+    angle: 55
+    seed: 99812
+    alpha: 0.15
+    roughness: 0.22
+    color: '#5f4126'
+SYSTEMS_400PC_EXTRA:
+- name: M 39
+  label: M39
+  kind: open_cluster
+  age_myr: 280
+  resolver: simbad
+  distance_pc: 300.0
+  ra_deg: 322.9
+  dec_deg: 48.4
+- name: IC 4665
+  label: IC 4665
+  kind: open_cluster
+  age_myr: 40
+  resolver: simbad
+  distance_pc: 350.0
+  ra_deg: 266.6
+  dec_deg: 5.7
+- name: Collinder 350
+  label: Collinder 350
+  kind: open_cluster
+  age_myr: 300
+  resolver: simbad
+  distance_pc: 363.0
+  ra_deg: 268.0
+  dec_deg: 1.8
+- name: Ruprecht 147
+  label: Ruprecht 147
+  kind: open_cluster
+  age_myr: 2500
+  resolver: simbad
+  distance_pc: 310.0
+  ra_deg: 289.1
+  dec_deg: -16.3
+- name: IC 348
+  label: IC 348
+  kind: embedded_cluster
+  age_myr: 3
+  resolver: simbad
+  distance_pc: 315.0
+  ra_deg: 56.1
+  dec_deg: 32.1
+- name: NGC 1333
+  label: NGC 1333
+  kind: embedded_cluster
+  age_myr: 2
+  resolver: simbad
+  distance_pc: 295.0
+  ra_deg: 52.3
+  dec_deg: 31.3
+- name: Stock 2
+  label: Stock 2
+  kind: open_cluster
+  age_myr: 110
+  resolver: simbad
+  distance_pc: 316.0
+  ra_deg: 33.4
+  dec_deg: 59.4
+- name: Platais 10
+  label: Platais 10
+  kind: open_cluster
+  age_myr: 35
+  resolver: simbad
+  distance_pc: 235.0
+  ra_deg: 132.0
+  dec_deg: -62.0
+- name: Cl Alessi 9
+  simbad_name: Cl Alessi 9
+  label: Cl Alessi 9
+  kind: open_cluster
+  age_myr: 90
+  resolver: simbad
+  distance_pc: 330.0
+  ra_deg: 127.0
+  dec_deg: -58.0
+- name: Cl Alessi 5
+  simbad_name: Cl Alessi 5
+  label: Cl Alessi 5
+  kind: open_cluster
+  age_myr: 50
+  resolver: simbad
+  distance_pc: 360.0
+  ra_deg: 121.0
+  dec_deg: -50.0
+- name: NGC 1901
+  label: NGC 1901
+  kind: open_cluster
+  age_myr: 400
+  resolver: simbad
+  distance_pc: 400.0
+  ra_deg: 79.5
+  dec_deg: -68.4
+- name: UPK 552
+  label: UPK 552
+  kind: open_cluster
+  age_myr: 35
+  resolver: simbad
+  distance_pc: 365.0
+  ra_deg: 125.0
+  dec_deg: -49.0
+- name: UPK 545
+  label: UPK 545
+  kind: open_cluster
+  age_myr: 32
+  resolver: simbad
+  distance_pc: 350.0
+  ra_deg: 127.0
+  dec_deg: -47.0
+- name: UPK 533
+  label: UPK 533
+  kind: open_cluster
+  age_myr: 28
+  resolver: simbad
+  distance_pc: 340.0
+  ra_deg: 123.0
+  dec_deg: -46.0
+- name: Pozzo 1
+  label: Pozzo 1
+  kind: open_cluster
+  age_myr: 35
+  resolver: simbad
+  distance_pc: 345.0
+  ra_deg: 128.0
+  dec_deg: -48.5
+- name: NGC 2547
+  label: NGC 2547
+  kind: open_cluster
+  age_myr: 35
+  resolver: simbad
+  distance_pc: 360.0
+  ra_deg: 122.5
+  dec_deg: -49.2
+- name: NGC 2451B
+  label: NGC 2451B
+  kind: open_cluster
+  age_myr: 50
+  resolver: simbad
+  distance_pc: 370.0
+  ra_deg: 116.4
+  dec_deg: -38.2
+- name: Collinder 140
+  label: Collinder 140
+  kind: open_cluster
+  age_myr: 25
+  resolver: simbad
+  distance_pc: 320.0
+  ra_deg: 107.0
+  dec_deg: -32.0
+- name: Collinder 135
+  label: Collinder 135
+  kind: open_cluster
+  age_myr: 35
+  resolver: simbad
+  distance_pc: 300.0
+  ra_deg: 110.5
+  dec_deg: -60.0
+- name: Cl Alessi 3
+  simbad_name: Cl Alessi 3
+  label: Cl Alessi 3
+  kind: open_cluster
+  age_myr: 45
+  resolver: simbad
+  distance_pc: 390.0
+  ra_deg: 130.5
+  dec_deg: -57.0
+- name: NGC 2516
+  label: NGC 2516
+  kind: open_cluster
+  age_myr: 120
+  resolver: simbad
+  distance_pc: 408.0
+  ra_deg: 119.5
+  dec_deg: -60.7
+- name: Collinder 69
+  label: Collinder 69
+  kind: open_cluster
+  age_myr: 8
+  resolver: simbad
+  distance_pc: 390.0
+  ra_deg: 83.8
+  dec_deg: 9.9
+- name: Stock 10
+  label: Stock 10
+  kind: open_cluster
+  age_myr: 25
+  resolver: simbad
+  distance_pc: 350.0
+  ra_deg: 85.2
+  dec_deg: 32.6
+- name: UPK 305
+  label: UPK 305
+  kind: open_cluster
+  age_myr: 120
+  resolver: simbad
+  distance_pc: 355.0
+  ra_deg: 72.0
+  dec_deg: 63.0
+- name: Roslund 6
+  label: Roslund 6
+  kind: open_cluster
+  age_myr: 30
+  resolver: simbad
+  distance_pc: 305.0
+  ra_deg: 313.0
+  dec_deg: 57.0
+- name: UPK 88
+  label: UPK 88
+  kind: open_cluster
+  age_myr: 45
+  resolver: simbad
+  distance_pc: 300.0
+  ra_deg: 335.0
+  dec_deg: 59.0
+- name: Messier 7
+  label: Messier 7
+  kind: open_cluster
+  age_myr: 220
+  resolver: simbad
+  distance_pc: 300.0
+  ra_deg: 268.5
+  dec_deg: -34.8
+- name: UPK 612
+  label: UPK 612
+  kind: open_cluster
+  age_myr: 45
+  resolver: simbad
+  distance_pc: 380.0
+  ra_deg: 278.0
+  dec_deg: -21.0
+- name: UPK 624
+  label: UPK 624
+  kind: open_cluster
+  age_myr: 45
+  resolver: simbad
+  distance_pc: 392.0
+  ra_deg: 289.0
+  dec_deg: -39.0
+- name: NGC 7058
+  label: '7058'
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 120
+  distance_pc: 395.0
+- name: NGC 6633
+  label: '6633'
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 700
+  distance_pc: 380.0
+- name: Stephenson 1
+  label: Stephenson 1
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 50
+  distance_pc: 320.0
+- name: ASCC 101
+  simbad_name: '[KPR2005] 101'
+  label: '101'
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 45
+  distance_pc: 360.0
+- name: Stock 1
+  label: St1
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 120
+  distance_pc: 395.0
+- name: UBC 9
+  label: U9
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 40
+  distance_pc: 330.0
+- name: UBC 32
+  label: U32
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 40
+  distance_pc: 300.0
+- name: ASCC 99
+  simbad_name: '[KPR2005] 99'
+  label: '99'
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 35
+  distance_pc: 340.0
+- name: ASCC 19
+  simbad_name: '[KPR2005] 19'
+  label: '19'
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 35
+  distance_pc: 340.0
+- name: RSG 1
+  label: RSG1
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 40
+  distance_pc: 250.0
+- name: UBC 31
+  label: U31
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 40
+  distance_pc: 310.0
+- name: ASCC 127
+  simbad_name: '[KPR2005] 127'
+  label: '127'
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 40
+  distance_pc: 360.0
+- name: ASCC 123
+  simbad_name: '[KPR2005] 123'
+  label: '123'
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 40
+  distance_pc: 340.0
+- name: RSG 5
+  label: RSG5
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 45
+  distance_pc: 360.0
+- name: UBC 1
+  label: U1
+  kind: open_cluster
+  resolver: simbad
+  age_myr: 45
+  distance_pc: 360.0
+BRIGHT_STARS_400PC_EXTRA:
+- name: Alderamin
+  label: Alderamin
+  distance_pc: 15.0
+  vmag: 2.45
+- name: Errai
+  label: Errai
+  distance_pc: 13.8
+  vmag: 3.21
+- name: Alfirk
+  label: Alfirk
+  distance_pc: 180.0
+  vmag: 3.23
+- name: Zeta Cephei
+  label: $\zeta$ Cep
+  distance_pc: 250.0
+  vmag: 3.35
+- name: Algol
+  label: Algol
+  distance_pc: 28.5
+  vmag: 2.1
+- name: Almach
+  label: Almach
+  distance_pc: 107.0
+  vmag: 2.1
+- name: Mirach
+  label: Mirach
+  distance_pc: 61.0
+  vmag: 2.1
+- name: Mebsuta
+  label: Mebsuta
+  distance_pc: 260.0
+  vmag: 3.1
+- name: Mekbuda
+  label: Mekbuda
+  distance_pc: 360.0
+  vmag: 4.0
+- name: Gomeisa
+  label: Gomeisa
+  distance_pc: 50.0
+  vmag: 2.9
+- name: Ainalrami
+  label: Ainalrami
+  distance_pc: 140.0
+  vmag: 3.8
+- name: HD 115211
+  label: HD 115211
+  distance_pc: 260.0
+  vmag: 7.0
+- name: HD 102839
+  label: HD 102839
+  distance_pc: 260.0
+  vmag: 7.0
+- name: HD 137071
+  label: HD 137071
+  distance_pc: 220.0
+  vmag: 7.0
+- name: 51 Peg
+  label: 51 Pegasi
+  distance_pc: 15.6
+  vmag: 5.5
+- name: Kepler-186
+  label: Kepler-186
+  distance_pc: 177.0
+  vmag: 15.7
+- name: WASP-121
+  label: WASP-121
+  distance_pc: 272.0
+  vmag: 10.4
+- name: Kepler-20
+  label: Kepler-20
+  distance_pc: 290.0
+  vmag: 12.5
+- name: Kepler-22
+  label: Kepler-22
+  distance_pc: 190.0
+  vmag: 11.7
+- name: TOI-3457
+  label: TOI-3457
+  distance_pc: 350.0
+  vmag: 12.5
+- name: Kepler-442
+  label: Kepler-442
+  distance_pc: 365.0
+  vmag: 14.8
+- name: eta Per
+  label: Miram
+  distance_pc: 380.0
+  vmag: 3.8
+- name: RY Dra
+  label: RY Dra
+  distance_pc: 360.0
+  vmag: 7.0
+- name: 102 Her
+  label: 102 Her
+  distance_pc: 240.0
+  vmag: 5.0
+- name: gam Ara
+  label: $\gamma$ Ara
+  distance_pc: 300.0
+  vmag: 3.3
+- name: xi Pup
+  label: Azmidi
+  distance_pc: 240.0
+  vmag: 3.3
+- name: HD 47667
+  label: HD 47667
+  distance_pc: 250.0
+  vmag: 7.0
+- name: V* UZ Cet
+  label: UZ Cet
+  distance_pc: 380.0
+  vmag: 7.0
+NEBULAE_400PC_EXTRA:
+- name: Near Perseus Dark Clouds
+  label: Near Perseus dark clouds
+  resolver: manual
+  distance_pc: 285.0
+  ra_deg: 47.0
+  dec_deg: 39.0
+  a_deg: 24.0
+  b_deg: 12.0
+  pa_deg: 20.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Cassiopeia Dark Clouds
+  label: Cassiopeia dark clouds
+  resolver: manual
+  distance_pc: 300.0
+  ra_deg: 6.0
+  dec_deg: 60.0
+  a_deg: 34.0
+  b_deg: 15.0
+  pa_deg: 10.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Cepheus Flare
+  label: Cepheus Flare
+  resolver: manual
+  distance_pc: 320.0
+  ra_deg: 315.0
+  dec_deg: 69.0
+  a_deg: 30.0
+  b_deg: 15.0
+  pa_deg: -20.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Cepheus CO Void
+  label: Cepheus CO void
+  resolver: manual
+  distance_pc: 330.0
+  ra_deg: 330.0
+  dec_deg: 52.0
+  a_deg: 26.0
+  b_deg: 11.0
+  pa_deg: -10.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Perseus Molecular Cloud
+  label: Perseus cloud
+  resolver: manual
+  distance_pc: 300.0
+  ra_deg: 52.0
+  dec_deg: 31.0
+  a_deg: 18.0
+  b_deg: 9.0
+  pa_deg: 45.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Orion Molecular Clouds
+  label: Orion molecular clouds
+  resolver: manual
+  distance_pc: 390.0
+  ra_deg: 84.0
+  dec_deg: -4.0
+  a_deg: 34.0
+  b_deg: 18.0
+  pa_deg: -30.0
+  color: '#8b6b4a'
+  kind: nebula
+- name: Ori OB1
+  label: ORI OB1
+  resolver: manual
+  distance_pc: 370.0
+  ra_deg: 84.0
+  dec_deg: -2.0
+  a_deg: 30.0
+  b_deg: 18.0
+  pa_deg: -20.0
+  color: '#b24b4b'
+  kind: nebula
+- name: Vela Supernova Remnant
+  label: Vela SNR
+  resolver: manual
+  distance_pc: 290.0
+  ra_deg: 128.8
+  dec_deg: -45.2
+  a_deg: 1.0
+  b_deg: 1.0
+  pa_deg: 0.0
+  color: '#58c8be'
+  kind: nebula
+  style: point
+- name: Geminga Supernova Remnant
+  label: Geminga SNR
+  resolver: manual
+  distance_pc: 250.0
+  ra_deg: 98.5
+  dec_deg: 17.8
+  a_deg: 1.0
+  b_deg: 1.0
+  pa_deg: 0.0
+  color: '#58c8be'
+  kind: nebula
+  style: point
+- name: Orion Nebula
+  label: Orion nebula
+  resolver: manual
+  distance_pc: 390.0
+  ra_deg: 83.82
+  dec_deg: -5.39
+  a_deg: 1.2
+  b_deg: 0.8
+  pa_deg: 18.0
+  color: '#67d8ca'
+  kind: nebula
+  style: point
+- name: California Nebula
+  label: California nebula
+  resolver: manual
+  distance_pc: 350.0
+  ra_deg: 60.5
+  dec_deg: 36.8
+  a_deg: 5.5
+  b_deg: 1.6
+  pa_deg: 35.0
+  color: '#67d8ca'
+  kind: nebula
+REFERENCE_OB_LABELS_400PC:
+- text: PER OB2
+  x: -306.0
+  y: 72.0
+  ha: left
+  va: center
+- text: PER OB3
+  x: -180.0
+  y: 44.0
+  ha: center
+  va: center
+- text: SCO OB2
+  x: 58.0
+  y: -58.0
+  ha: center
+  va: center
+- text: ORI OB1
+  x: -308.0
+  y: -36.0
+  ha: center
+  va: center
+- text: VEL OB2
+  x: -72.0
+  y: -324.0
+  ha: center
+  va: center
+STAR_POSITION_OVERRIDES_400PC:
+  Miram:
+    x: -226.0
+    y: 114.0
+  UZ Cet:
+    x: -235.0
+    y: 22.0
+    z: -560.0
+STAR_RADIUS_ESTIMATE_RSUN:
+  Betelgeuse: 700.0
+  Antares: 680.0
+  Rigel: 80.0
+  Canopus: 70.0
+  Wezen: 200.0
+  Mirfak: 60.0
+  Polaris: 37.0
+  Cih: 10.0
+  Arcturus: 25.0
+  Aldebaran: 44.0
+  Pollux: 9.0
+  Capella: 12.0
+  Dubhe: 30.0
+  Kochab: 42.0
+  Enif: 185.0
+  Albireo: 50.0
+  Tarazed: 95.0
+  Schedar: 42.0
+  Scheat: 95.0
+  Almach: 80.0
+  Atria: 130.0
+  Peacock: 4.5
+  Acrux: 8.0
+  Mimosa: 8.0
+  Miram: 35.0
+  Azmidi: 10.0
+  gamma Ara: 25.0
+  $\gamma$ Ara: 25.0
+  UZ Cet: 250.0
+  Sirius: 1.7
+  Vega: 2.4
+  Altair: 1.8
+  Procyon: 2.0
+  Fomalhaut: 1.8
+  Spica: 7.4
+  Bellatrix: 5.8
+  Saiph: 22.0
+  Meissa: 10.0
+  Alnitak: 20.0
+  Adhara: 14.0
+  Mirzam: 8.0
+  102 Her: 2.5
+  HD 47667: 1.1
+  RY Dra: 80.0
+CLOUD_CATALOG_ALIASES:
+  Taurus complex:
+  - Taurus
+  Taurus dark clouds:
+  - Taurus
+  Near Perseus dark clouds:
+  - Perseus
+  - Polaris
+  Cassiopeia dark clouds:
+  - Cepheus
+  - Polaris
+  Cepheus Flare:
+  - Cepheus
+  Cepheus CO void:
+  - Cepheus
+  Perseus cloud:
+  - Perseus
+  - Polaris
+  Orion molecular clouds:
+  - Orion
+  - Orion_Lam
+  Orion nebula:
+  - Orion
+  California nebula:
+  - California
+  Aquila south rift:
+  - AqRift
+  - Aquila_S
+  Ophiuchus dark clouds:
+  - Ophiuchus
+  - OphArc
+  - OphNorth
+  $\rho$ Oph complex:
+  - Ophiuchus
+  - L1688
+  Lupus clouds:
+  - Lupus
+  Chamaeleon complex:
+  - Chamaeleon
+  Coalsack:
+  - Coalsack
+  - NorthernCoalsack
+  Pipe nebula:
+  - B44
+  - B45
+  - B59
+  ORI OB1:
+  - Orion
+  - Orion_Lam
+CLOUD_RENDER_DEFAULTS:
+  bubble_scale_pc: 3.3
+  bubble_min_pc: 10.0
+  bubble_resolution: 32
+  projection_alpha: 0.1
+  projection_sigma: 1.3

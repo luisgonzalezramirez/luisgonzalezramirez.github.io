@@ -1,0 +1,12 @@
+# Heavy local scientific files
+*.h5
+*.hdf5
+cache/
+scripts/__pycache__/
+__pycache__/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

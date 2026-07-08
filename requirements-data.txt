@@ -1,0 +1,6 @@
+numpy
+pyyaml
+h5py
+astropy
+astroquery
+scipy

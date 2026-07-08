@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chronos Presentation | Luis González Ramírez</title>
+  <meta name="description" content="Slide presentation about the Chronos article and Bayesian stellar-age inference." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="talk-page">
+  <header class="site-header glass">
+    <nav class="navbar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span>Luis González Ramírez</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#research">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#astrophotography">Astrophotography</a>
+        <a href="index.html#cv">CV</a>
+        <a href="map.html" class="nav-cta">3D Solar Map</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="talk-shell">
+    <section class="talk-intro">
+      <img class="talk-logo" src="assets/img/logo.png" alt="Chronos logo" />
+      <div>
+        <p class="eyebrow">Chronos article</p>
+        <h1>Chronos presentation</h1>
+        <p>
+          Slide presentation about the Chronos stellar-age model, the neural-network emulator and the Bayesian hierarchical validation on the Pleiades cluster.
+        </p>
+        <div class="hero-actions compact-actions talk-actions">
+          <a class="button secondary" href="https://www.aanda.org/articles/aa/full_html/2026/06/aa59708-26/aa59708-26.html" target="_blank" rel="noopener">A&amp;A article</a>
+          <a class="button secondary" href="https://ui.adsabs.harvard.edu/abs/2026A%26A...710A.407G/abstract" target="_blank" rel="noopener">ADS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="talk-viewer-card slide-deck-card" aria-label="Chronos slide deck">
+      <div class="viewer-header slide-viewer-header">
+        <div class="slide-title-block">
+          <strong>Chronos slide deck</strong>
+          <span>Use the buttons or keyboard arrows to move between slides.</span>
+        </div>
+        <div class="pdf-controls" aria-label="Presentation controls">
+          <button class="panel-button compact-control" type="button" id="talk-prev">← Previous</button>
+          <span id="talk-page-label">Slide 1 / 12</span>
+          <button class="panel-button compact-control" type="button" id="talk-next">Next →</button>
+        </div>
+      </div>
+      <div class="slide-stage" id="slide-stage">
+        <img id="talk-slide" src="assets/img/talk/slide_01.png" alt="Chronos presentation slide 1" />
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = [
+        'assets/img/talk/slide_01.png',
+        'assets/img/talk/slide_02.png',
+        'assets/img/talk/slide_03.png',
+        'assets/img/talk/slide_04.png',
+        'assets/img/talk/slide_05.png',
+        'assets/img/talk/slide_06.png',
+        'assets/img/talk/slide_07.png',
+        'assets/img/talk/slide_08.png',
+        'assets/img/talk/slide_09.png',
+        'assets/img/talk/slide_10.png',
+        'assets/img/talk/slide_11.png',
+        'assets/img/talk/slide_12.png',
+      ];
+      const img = document.getElementById('talk-slide');
+      const label = document.getElementById('talk-page-label');
+      const prev = document.getElementById('talk-prev');
+      const next = document.getElementById('talk-next');
+      let index = 0;
+      const preloaded = slides.map((src) => { const im = new Image(); im.src = src; return im; });
+
+      function showSlide(newIndex) {
+        index = Math.max(0, Math.min(slides.length - 1, newIndex));
+        img.classList.remove('is-visible');
+        window.setTimeout(() => {
+          img.src = slides[index];
+          img.alt = `Chronos presentation slide ${index + 1}`;
+          label.textContent = `Slide ${index + 1} / ${slides.length}`;
+          prev.disabled = index === 0;
+          next.disabled = index === slides.length - 1;
+          img.classList.add('is-visible');
+        }, 90);
+      }
+
+      prev.addEventListener('click', () => showSlide(index - 1));
+      next.addEventListener('click', () => showSlide(index + 1));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') { event.preventDefault(); showSlide(index - 1); }
+        if (event.key === 'ArrowRight') { event.preventDefault(); showSlide(index + 1); }
+      });
+      img.addEventListener('load', () => img.classList.add('is-visible'));
+      showSlide(0);
+    });
+  </script>
+</body>
+</html>

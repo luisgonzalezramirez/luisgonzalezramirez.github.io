@@ -1,0 +1,37 @@
+name,label,constellation,distance_pc,vmag,spectral_type
+Sirius,Sirius,Canis Major,2.64,-1.46,A1V
+Canopus,Canopus,Carina,95,-0.74,A9II
+Arcturus,Arcturus,Boötes,11.3,-0.05,K1.5III
+Vega,Vega,Lyra,7.68,0.03,A0V
+Capella,Capella,Auriga,12.9,0.08,G8III
+Rigel,Rigel,Orion,264,0.13,B8Ia
+Procyon,Procyon,Canis Minor,3.51,0.34,F5IV-V
+Achernar,Achernar,Eridanus,42.8,0.46,B6Vep
+Betelgeuse,Betelgeuse,Orion,197,0.5,M1-M2Ia
+Altair,Altair,Aquila,5.13,0.77,A7V
+Acrux,Acrux,Crux,98,0.76,B0.5IV
+Aldebaran,Aldebaran,Taurus,20.4,0.86,K5III
+Spica,Spica,Virgo,77,0.98,B1III-IV
+Antares,Antares,Scorpius,170,1.06,M1.5Iab
+Pollux,Pollux,Gemini,10.4,1.14,K0III
+Fomalhaut,Fomalhaut,Piscis Austrinus,7.7,1.16,A3V
+Regulus,Regulus,Leo,24.3,1.35,B8IVn
+Castor,Castor,Gemini,15.6,1.58,A1V
+Bellatrix,Bellatrix,Orion,77,1.64,B2III
+Elnath,Elnath,Taurus,41,1.65,B7III
+Alioth,Alioth,Ursa Major,25.3,1.77,A0p
+Dubhe,Dubhe,Ursa Major,38,1.79,K0III
+Mirfak,Mirfak,Perseus,155,1.79,F5Ib
+Kaus Australis,Kaus Australis,Sagittarius,44,1.85,B9.5III
+Alkaid,Alkaid,Ursa Major,31,1.86,B3V
+Polaris,Polaris,Ursa Minor,133,1.98,F7Ib
+Hamal,Hamal,Aries,20.2,2,K2III
+Diphda,Diphda,Cetus,29.5,2.04,K0III
+Nunki,Nunki,Sagittarius,69,2.05,B2.5V
+Saiph,Saiph,Orion,198,2.07,B0.5Ia
+Mizar,Mizar,Ursa Major,25,2.23,A2V
+Alpheratz,Alpheratz,Andromeda,29.8,2.06,B9p
+Caph,Caph,Cassiopeia,16.8,2.27,F2III
+Schedar,Schedar,Cassiopeia,70,2.24,K0III
+Rasalhague,Rasalhague,Ophiuchus,14.3,2.07,A5III
+Denebola,Denebola,Leo,11,2.14,A3V
