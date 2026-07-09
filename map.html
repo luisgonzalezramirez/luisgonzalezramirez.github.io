@@ -4,14 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>3D Solar Neighbourhood Map | Luis González Ramírez</title>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=1.2.1" />
 </head>
 <body class="map-page">
   <header class="site-header glass">
     <nav class="navbar">
       <div class="language-switcher" aria-label="Language selector">
-        <button class="lang-button active" data-lang="en" type="button" aria-label="English" aria-pressed="true" title="English">🇬🇧</button>
-        <button class="lang-button" data-lang="es" type="button" aria-label="Español" aria-pressed="false" title="Español">🇪🇸</button>
+        <button class="lang-button flag-button active" data-lang="en" type="button" aria-label="English" aria-pressed="true" title="English">
+          <span class="flag flag-en" aria-hidden="true"></span>
+        </button>
+        <button class="lang-button flag-button" data-lang="es" type="button" aria-label="Español" aria-pressed="false" title="Español">
+          <span class="flag flag-es" aria-hidden="true"></span>
+        </button>
       </div>
       <a class="brand" href="index.html" aria-label="Home"><span>Luis González Ramírez</span></a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -220,10 +224,10 @@
     "es": "Arrastra para rotar · Rueda para ampliar · Pulsa un cúmulo para centrar la vista"
   }
 }</script>
-  <script src="assets/js/main.js?v=1.2"></script>
+  <script src="assets/js/main.js?v=1.2.1"></script>
   <script src="https://unpkg.com/three@0.128.0/build/three.min.js" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js';"></script>
   <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js';"></script>
-  <script src="assets/js/solar-data.js?v=1.2"></script>
-  <script src="assets/js/solar-map.js?v=1.2"></script>
+  <script src="assets/js/solar-data.js?v=1.2.1"></script>
+  <script src="assets/js/solar-map.js?v=1.2.1"></script>
 </body>
 </html>
