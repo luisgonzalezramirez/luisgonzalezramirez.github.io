@@ -1396,3 +1396,12 @@ body:not(.home-page) .reveal-on-scroll {
     transition: none !important;
   }
 }
+
+
+/* v1.1 language selector and contact card ------------------------------- */
+.language-switcher{display:inline-flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--border);border-radius:999px;background:rgba(15,23,42,.68);backdrop-filter:blur(12px);box-shadow:0 12px 28px rgba(0,0,0,.20)}
+.lang-button{border:0;border-radius:999px;padding:6px 10px;color:var(--muted);background:transparent;font:inherit;font-size:.78rem;font-weight:800;letter-spacing:.06em;cursor:pointer}
+.lang-button.active{color:#06111f;background:var(--accent)}
+.contact-card{margin-top:22px;padding:22px 24px;border:1px solid var(--border);border-radius:24px;background:linear-gradient(135deg,rgba(15,23,42,.86),rgba(8,13,28,.94));box-shadow:var(--shadow)}
+.contact-card h3{margin:0 0 12px}.contact-card p{margin:8px 0;color:var(--muted)}.contact-card a{color:var(--accent);text-decoration:none}.contact-card a:hover{text-decoration:underline}
+@media(max-width:760px){.language-switcher{order:-2}}

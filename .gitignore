@@ -1,12 +1,12 @@
-# Heavy local scientific files
-*.h5
-*.hdf5
-cache/
-scripts/__pycache__/
-__pycache__/
+# Local/personal working notes
+FIXES_APPLIED.md
+README_personal_update.md
 
-# OS/editor
+# Local helper scripts
+scripts/reduced.py
+
+# OS/editor/cache noise
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
+__pycache__/
+*.pyc

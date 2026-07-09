@@ -18,6 +18,44 @@ document.addEventListener('DOMContentLoaded', () => {
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
 
+
+  const translationNode = document.querySelector('#site-translations');
+  let siteTranslations = {};
+  try { siteTranslations = translationNode ? JSON.parse(translationNode.textContent || '{}') : {}; }
+  catch (err) { console.warn('[i18n] Could not parse translations:', err); }
+
+  function getCurrentLanguage() {
+    return localStorage.getItem('site-language') || document.documentElement.lang || 'en';
+  }
+
+  function localizedValue(item, field) {
+    const lang = getCurrentLanguage();
+    return lang === 'es' ? (item[`${field}_es`] || item[field] || '') : (item[field] || '');
+  }
+
+  function applyLanguage(lang) {
+    const normalized = lang === 'es' ? 'es' : 'en';
+    localStorage.setItem('site-language', normalized);
+    document.documentElement.lang = normalized;
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const value = siteTranslations[el.dataset.i18n]?.[normalized];
+      if (typeof value === 'string') el.textContent = value;
+    });
+    document.querySelectorAll('.lang-button').forEach((button) => {
+      const active = button.dataset.lang === normalized;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    document.title = normalized === 'es' ? 'Luis González Ramírez | Astrofísica' : 'Luis González Ramírez | Astrophysics';
+  }
+
+  document.querySelectorAll('.lang-button').forEach((button) => {
+    button.addEventListener('click', () => {
+      applyLanguage(button.dataset.lang);
+      renderAstroGallery();
+    });
+  });
+
   function ensureImageModal() {
     let modal = document.querySelector('#image-modal');
     if (modal) return modal;
@@ -49,24 +87,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const gallery = document.querySelector('#astro-gallery');
-  if (gallery && Array.isArray(window.ASTRO_GALLERY)) {
+  function renderAstroGallery() {
+    if (!gallery || !Array.isArray(window.ASTRO_GALLERY)) return;
     gallery.innerHTML = window.ASTRO_GALLERY.map((item, index) => `
       <article class="gallery-card">
-        <a class="gallery-image-link" href="${escapeHtml(item.image)}" data-gallery-index="${index}" aria-label="Open ${escapeHtml(item.title)} preview">
+        <a class="gallery-image-link" href="${escapeHtml(item.image)}" data-gallery-index="${index}" aria-label="Open ${escapeHtml(localizedValue(item, 'title'))} preview">
           <img
             src="${escapeHtml(item.thumb || item.image)}"
-            alt="${escapeHtml(item.title)}"
+            alt="${escapeHtml(localizedValue(item, 'title'))}"
             loading="lazy"
             decoding="async"
             onerror="this.onerror=null; this.src=this.closest('.gallery-image-link').href;"
           />
         </a>
         <div class="gallery-card-body">
-          <p class="badge">${escapeHtml(item.type)}</p>
-          <h3>${escapeHtml(item.title)}</h3>
-          <p class="capture">${escapeHtml(item.capture)}</p>
-          <p>${escapeHtml(item.description)}</p>
-          <a class="text-link" href="${escapeHtml(item.image)}" target="_blank" rel="noopener">Open full image →</a>
+          <p class="badge">${escapeHtml(localizedValue(item, 'type'))}</p>
+          <h3>${escapeHtml(localizedValue(item, 'title'))}</h3>
+          <p class="capture">${escapeHtml(localizedValue(item, 'capture'))}</p>
+          <p>${escapeHtml(localizedValue(item, 'description'))}</p>
+          <a class="text-link" href="${escapeHtml(item.image)}" target="_blank" rel="noopener">${getCurrentLanguage() === 'es' ? 'Abrir imagen completa →' : 'Open full image →'}</a>
         </div>
       </article>
     `).join('');
@@ -77,16 +116,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const item = window.ASTRO_GALLERY[Number(link.dataset.galleryIndex)];
         if (!item) return;
         const modal = ensureImageModal();
-        modal.querySelector('#image-modal-title').textContent = item.title;
-        modal.querySelector('#image-modal-caption').textContent = item.capture || '';
+        modal.querySelector('#image-modal-title').textContent = localizedValue(item, 'title');
+        modal.querySelector('#image-modal-caption').textContent = localizedValue(item, 'capture') || '';
         const img = modal.querySelector('#image-modal-img');
         img.src = item.image;
-        img.alt = item.title;
-        modal.querySelector('#image-modal-open').href = item.image;
+        img.alt = localizedValue(item, 'title');
+        const openLink = modal.querySelector('#image-modal-open');
+        openLink.href = item.image;
+        openLink.textContent = getCurrentLanguage() === 'es' ? 'Abrir imagen completa →' : 'Open full image →';
         modal.classList.add('open');
       });
     });
   }
+  applyLanguage(getCurrentLanguage());
+  renderAstroGallery();
 
   const cvCanvas = document.querySelector('#cv-canvas');
   const cvOpen = document.querySelector('#cv-open-link');

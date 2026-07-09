@@ -1,235 +1,493 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luis González Ramírez | Astrophysics</title>
-  <meta name="description" content="Astrophysics, stellar ages, Bayesian inference, spectral studies, astrophotography and an interactive 3D map of the solar neighbourhood." />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luis González Ramírez | Astrophysics</title>
+<meta content="Astrophysics, stellar ages, Bayesian inference, spectral studies, astrophotography and an interactive 3D map of the solar neighbourhood." name="description"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
 </head>
 <body class="home-page">
-  <header class="site-header">
-    <nav class="navbar">
-      <a class="brand" href="index.html" aria-label="Home">
-        <span>Luis González Ramírez</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#astrophotography">Astrophotography</a>
-        <a href="#outreach">Outreach</a>
-        <a href="#cv">CV</a>
-        <a href="#links">Links</a>
-        <a href="talk_chronos.html" class="nav-cta">Chronos presentation</a>
-        <a href="map.html" class="nav-cta">3D Solar Map</a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Astrophysics</p>
-        <h1>Exploring the Cosmos through stars, images and more.</h1>
-        <p class="hero-text">
+<header class="site-header">
+<nav class="navbar"><div aria-label="Language selector" class="language-switcher"><button aria-pressed="true" class="lang-button active" data-lang="en" type="button">EN</button><button aria-pressed="false" class="lang-button" data-lang="es" type="button">ES</button></div>
+<a aria-label="Home" class="brand" href="index.html">
+<span>Luis González Ramírez</span>
+</a>
+<button aria-expanded="false" aria-label="Open menu" class="nav-toggle" type="button">☰</button>
+<div class="nav-links">
+<a data-i18n="research" href="#research">Research</a>
+<a data-i18n="publications" href="#publications">Publications</a>
+<a data-i18n="astrophotography" href="#astrophotography">Astrophotography</a>
+<a data-i18n="outreach" href="#outreach">Outreach</a>
+<a href="#cv">CV</a>
+<a data-i18n="links" href="#links">Links</a>
+<a class="nav-cta" data-i18n="chronos-presentation" href="talk_chronos.html">Chronos presentation</a>
+<a class="nav-cta" data-i18n="3d-solar-map" href="map.html">3D Solar Map</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-content">
+<p class="eyebrow" data-i18n="astrophysics">Astrophysics</p>
+<h1 data-i18n="exploring-the-cosmos-through-stars-images-and">Exploring the Cosmos through stars, images and more.</h1>
+<p class="hero-text" data-i18n="i-work-on-stellar-ages-at-the-centro-de-astro">
           I work on stellar ages at the Centro de Astrobiología (CAB), combining Bayesian inference, stellar diagnostics and young stellar populations. This site brings together my research, publications, code, astrophotography and an interactive 3D atlas of the solar neighbourhood.
         </p>
-        <div class="hero-actions">
-          <a href="map.html" class="button primary">Launch 3D Solar Map</a>
-          <a href="talk_chronos.html" class="button primary">Chronos presentation</a>
-          <a href="#publications" class="button secondary">View publications</a>
-          <a href="#astrophotography" class="button secondary">Astrophotography</a>
-        </div>
-      </div>
-      <aside class="hero-card-stack">
-        <article class="hero-card compact-hero-card">
-          <div class="stellar-graphic" aria-hidden="true">
-            <span class="depth-ring depth-ring-1"></span>
-            <span class="depth-ring depth-ring-2"></span>
-            <span class="depth-star d1"></span>
-            <span class="depth-star d2"></span>
-            <span class="depth-star d3"></span>
-            <span class="depth-star d4"></span>
-            <span class="depth-star d5"></span>
-            <span class="depth-axis depth-axis-x"></span>
-            <span class="depth-axis depth-axis-y"></span>
-          </div>
-          <h2>Solar Neighbourhood Atlas</h2>
-          <p>Interactive 3D map with nearby stars, open clusters, molecular clouds and local dust structures.</p>
-          <a class="text-link" href="map.html">Open the map →</a>
-        </article>
-
-        <article class="hero-card compact-hero-card chronos-card">
-          <img class="chronos-logo" src="assets/img/logo.png" alt="Chronos logo" loading="lazy" />
-          <h2>Chronos article</h2>
-          <p>PDF presentation about the Chronos article, Bayesian inference and stellar ages.</p>
-          <a class="text-link" href="talk_chronos.html">Open the presentation →</a>
-        </article>
-      </aside>
-    </section>
-
-    <section id="research" class="section grid-section">
-      <div>
-        <p class="section-kicker">Research</p>
-        <h2>Stellar ages, Bayesian inference and spectral studies</h2>
-      </div>
-      <div class="cards">
-        <article class="card linked-card">
-          <h3>Chronos</h3>
-          <p>Bayesian hierarchical age inference for young stellar populations using lithium abundances, effective temperatures and neural-network emulators.</p>
-          <a class="text-link" href="https://github.com/luisgonzalezramirez" target="_blank" rel="noopener">Code on GitHub →</a>
-        </article>
-        <article class="card linked-card">
-          <h3>Solar neighbourhood atlas</h3>
-          <p>Interactive 3D context for bright stars, open clusters, associations, molecular clouds and nearby dust structures.</p>
-          <a class="text-link" href="map.html">Open 3D map →</a>
-        </article>
-        <article class="card linked-card">
-          <h3>Spectral synthesis and inference</h3>
-          <p>Work in progress: a spectral synthesiser with Bayesian inference for stellar diagnostics and atmospheric parameters.</p>
-          <a class="text-link" href="https://github.com/luisgonzalezramirez" target="_blank" rel="noopener">Development repository →</a>
-        </article>
-      </div>
-    </section>
-
-    <section id="publications" class="section publications-section">
-      <div class="section-heading-row">
-        <div>
-          <p class="section-kicker">Publications</p>
-          <h2>Articles and conference contributions</h2>
-        </div>
-        <a class="button secondary compact" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Gonz%C3%A1lez-Ram%C3%ADrez%2C%20L.%22&sort=date%20desc%2C%20bibcode%20desc" target="_blank" rel="noopener">All publications on ADS</a>
-      </div>
-
-      <div class="publication-grid">
-        <article class="publication-card">
-          <p class="badge">Refereed article</p>
-          <h3>Chronos: Towards a self-consistent and absolute stellar age scale</h3>
-          <p class="publication-meta">L. González-Ramírez et al. · Astronomy &amp; Astrophysics, 710, A407 (2026)</p>
-          <p>Bayesian hierarchical lithium-age model validated on the Pleiades, combining lithium abundances, effective temperatures and a neural-network emulator trained on BT-Settl predictions.</p>
-          <div class="button-row small-buttons">
-            <a class="button primary compact" href="https://www.aanda.org/articles/aa/full_html/2026/06/aa59708-26/aa59708-26.html" target="_blank" rel="noopener">A&amp;A article</a>
-            <a class="button secondary compact" href="https://ui.adsabs.harvard.edu/abs/2026A%26A...710A.407G/abstract" target="_blank" rel="noopener">ADS</a>
-            <a class="button secondary compact" href="assets/pdf/chronos_aanda_2026.pdf" target="_blank" rel="noopener">PDF</a>
-            <a class="button secondary compact" href="talk_chronos.html">Presentation</a>
-          </div>
-        </article>
-
-        <article class="publication-card">
-          <p class="badge">Conference contribution</p>
-          <h3>Teaching Astronomy with the Virtual Observatory</h3>
-          <p class="publication-meta">XVI Reunión Científica de la Sociedad Española de Astronomía · 2025</p>
-          <p>Educational material and practical activities based on the Spanish Virtual Observatory, designed to introduce astronomical data access and analysis in teaching contexts.</p>
-          <div class="button-row small-buttons">
-            <a class="button primary compact" href="https://svo.cab.inta-csic.es/?page_id=148" target="_blank" rel="noopener">SVO page</a>
-            <a class="button secondary compact" href="assets/pdf/SEA_proceedings_2025.pdf" target="_blank" rel="noopener">PDF</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="astrophotography" class="section astrophotography-section">
-      <div class="section-heading-row">
-        <div>
-          <p class="section-kicker">Astrophotography</p>
-          <h2>Images from the night sky</h2>
-        </div>
-        <p class="section-note astro-note">Passionate about bringing the Cosmos closer to people and preserving memories from my observing nights, from my first 90 mm Cassegrain to my current SkyWatcher 150 mm. Capturing images with a Canon R50 camera, I have enjoyed more than ten years of glimpsing the wonders hidden in the starry night. Here are some of them.</p>
-      </div>
-      <figure class="section-visual-card astro-section-visual" aria-label="Astrophotography observing setup">
-        <img src="assets/img/astro/tel.jpg" alt="SkyWatcher telescope prepared at sunset for an observing night" />
-        <figcaption class="section-visual-caption">
-          <strong>SkyWatcher telescope prepared</strong>
-          <span>Observing nights, preparation and patient captures under changing skies.</span>
-        </figcaption>
-      </figure>
-      <div class="gallery-grid" id="astro-gallery"></div>
-    </section>
-
-    <section id="outreach" class="section outreach-section">
-      <div class="section-heading-row">
-        <div>
-          <p class="section-kicker">Outreach</p>
-          <h2>Bringing the Cosmos closer</h2>
-        </div>
-      </div>
-      <article class="outreach-card outreach-feature-card">
-        <img class="outreach-feature-photo" src="assets/img/outreach/astro_intro.JPG" alt="Night astronomy outreach activity with Astroafición" />
-        <div class="outreach-content">
-          <img class="outreach-logo" src="assets/img/outreach/logo_astro.png" alt="Astroafición logo" />
-          <p>Alongside my research and astrophotography, I participate as an astronomy monitor in leisure and outreach activities with Astroafición. My goal is to bring the mysteries and beauty of the Cosmos to audiences of all ages in an accessible, entertaining and memorable way.</p>
-          <a class="button primary compact" href="https://astroaficion.com/" target="_blank" rel="noopener">Visit Astroafición →</a>
-        </div>
-      </article>
-      <div class="outreach-square-grid" aria-label="Astroafición outreach activities">
-        <img class="outreach-square-photo" src="assets/img/outreach/astro_1.jpg" alt="Preparing a Dobsonian telescope during an Astroafición activity" />
-        <img class="outreach-square-photo" src="assets/img/outreach/astro_2.jpg" alt="Explaining telescope observations during an Astroafición activity" />
-        <img class="outreach-square-photo" src="assets/img/outreach/charla.jpg" alt="Astronomy outreach talk for students" />
-      </div>
-    </section>
-
-    <section id="cv" class="section cv-section">
-      <p class="section-kicker">Profile</p>
-      <h2>Curriculum vitae</h2>
-      <p class="section-intro">Choose a language to preview the CV inside the page. The direct PDF links remain available for download or opening in a new tab.</p>
-      <div class="cv-selector" role="tablist" aria-label="CV language selector">
-        <button class="cv-tab active" type="button" data-cv="assets/pdf/CV_Luis_Gonzalez_Ramirez_EN.pdf" data-label="English CV">🇬🇧 English</button>
-        <button class="cv-tab" type="button" data-cv="assets/pdf/CV_Luis_Gonzalez_Ramirez_ES.pdf" data-label="Spanish CV">🇪🇸 Español</button>
-      </div>
-      <div class="cv-viewer-card">
-        <div class="cv-viewer-toolbar">
-          <strong id="cv-current-label">English CV</strong>
-          <div class="cv-controls" aria-label="CV page controls">
-            <button class="panel-button compact-control" type="button" id="cv-prev">← Previous</button>
-            <span id="cv-page-label">Page 1 / …</span>
-            <button class="panel-button compact-control" type="button" id="cv-next">Next →</button>
-          </div>
-          <a id="cv-open-link" class="text-link" href="assets/pdf/CV_Luis_Gonzalez_Ramirez_EN.pdf" target="_blank" rel="noopener">Open PDF in new tab →</a>
-        </div>
-        <div class="cv-canvas-shell">
-          <canvas id="cv-canvas" aria-label="CV preview"></canvas>
-          <p id="cv-fallback" class="cv-fallback" hidden>Your browser could not render the PDF preview here. Use the link above to open it.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="links" class="section links-section">
-      <p class="section-kicker">Repositories and profiles</p>
-      <h2>Code, identifiers and social links</h2>
-      <div class="link-grid">
-        <a class="link-card" href="https://github.com/luisgonzalezramirez" target="_blank" rel="noopener">
-          <span class="link-logo image-logo" aria-hidden="true"><img src="assets/img/social/github_logo.png" alt="" /></span>
-          <h3>GitHub</h3>
-          <p>@luisgonzalezramirez</p>
-        </a>
-        <a class="link-card" href="https://orcid.org/0009-0008-8152-8435" target="_blank" rel="noopener">
-          <span class="link-logo image-logo" aria-hidden="true"><img src="assets/img/social/orcid_logo.png" alt="" /></span>
-          <h3>ORCID</h3>
-          <p>0009-0008-8152-8435</p>
-        </a>
-        <a class="link-card" href="https://www.instagram.com/lewisjr27798/" target="_blank" rel="noopener">
-          <span class="link-logo image-logo" aria-hidden="true"><img src="assets/img/social/instagram_logo.png" alt="" /></span>
-          <h3>Instagram</h3>
-          <p>@lewisjr27798</p>
-        </a>
-        <a class="link-card" href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&fq_author=(((author_facet_hier%3A%221%2FGonzalez-Ramirez%2C%20L%2FGonz%C3%A1lez-Ram%C3%ADrez%2C%20L%22%20OR%20author_facet_hier%3A%221%2FGonzalez-Ramirez%2C%20L%2FGonzalez-Ramirez%2C%20L%22))%20AND%20author_facet_hier%3A%221%2FGonzalez-Ramirez%2C%20L%2FGonz%C3%A1lez-Ram%C3%ADrez%2C%20L%22)&q=author%3A%22Gonz%C3%A1lez-Ram%C3%ADrez%2C%20L.%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" rel="noopener">
-          <span class="link-logo image-logo" aria-hidden="true"><img src="assets/img/social/ads_logo.png" alt="" /></span>
-          <h3>NASA ADS</h3>
-          <p>Publication list</p>
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Luis González Ramírez</p>
-    <p>Astrophysics · Astrophotography · Interactive maps</p>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-  <script src="assets/js/gallery.js"></script>
-  <script src="assets/js/main.js"></script>
+<div class="hero-actions">
+<a class="button primary" data-i18n="launch-3d-solar-map" href="map.html">Launch 3D Solar Map</a>
+<a class="button primary" data-i18n="chronos-presentation-2" href="talk_chronos.html">Chronos presentation</a>
+<a class="button secondary" data-i18n="view-publications" href="#publications">View publications</a>
+<a class="button secondary" data-i18n="astrophotography-2" href="#astrophotography">Astrophotography</a>
+</div>
+</div>
+<aside class="hero-card-stack">
+<article class="hero-card compact-hero-card">
+<div aria-hidden="true" class="stellar-graphic">
+<span class="depth-ring depth-ring-1"></span>
+<span class="depth-ring depth-ring-2"></span>
+<span class="depth-star d1"></span>
+<span class="depth-star d2"></span>
+<span class="depth-star d3"></span>
+<span class="depth-star d4"></span>
+<span class="depth-star d5"></span>
+<span class="depth-axis depth-axis-x"></span>
+<span class="depth-axis depth-axis-y"></span>
+</div>
+<h2 data-i18n="solar-neighbourhood-atlas">Solar Neighbourhood Atlas</h2>
+<p data-i18n="interactive-3d-map-with-nearby-stars-open-clu">Interactive 3D map with nearby stars, open clusters, molecular clouds and local dust structures.</p>
+<a class="text-link" data-i18n="open-the-map" href="map.html">Open the map →</a>
+</article>
+<article class="hero-card compact-hero-card chronos-card">
+<img alt="Chronos logo" class="chronos-logo" loading="lazy" src="assets/img/logo.png"/>
+<h2 data-i18n="chronos-article">Chronos article</h2>
+<p data-i18n="pdf-presentation-about-the-chronos-article-ba">PDF presentation about the Chronos article, Bayesian inference and stellar ages.</p>
+<a class="text-link" data-i18n="open-the-presentation" href="talk_chronos.html">Open the presentation →</a>
+</article>
+</aside>
+</section>
+<section class="section grid-section" id="research">
+<div>
+<p class="section-kicker" data-i18n="research-2">Research</p>
+<h2 data-i18n="stellar-ages-bayesian-inference-and-spectral-">Stellar ages, Bayesian inference and spectral studies</h2>
+</div>
+<div class="cards">
+<article class="card linked-card">
+<h3>Chronos</h3>
+<p data-i18n="bayesian-hierarchical-age-inference-for-young">Bayesian hierarchical age inference for young stellar populations using lithium abundances, effective temperatures and neural-network emulators.</p>
+<a class="text-link" data-i18n="code-on-github" href="https://github.com/luisgonzalezramirez" rel="noopener" target="_blank">Code on GitHub →</a>
+</article>
+<article class="card linked-card">
+<h3 data-i18n="solar-neighbourhood-atlas-2">Solar neighbourhood atlas</h3>
+<p data-i18n="interactive-3d-context-for-bright-stars-open-">Interactive 3D context for bright stars, open clusters, associations, molecular clouds and nearby dust structures.</p>
+<a class="text-link" data-i18n="open-3d-map" href="map.html">Open 3D map →</a>
+</article>
+<article class="card linked-card">
+<h3 data-i18n="spectral-synthesis-and-inference">Spectral synthesis and inference</h3>
+<p data-i18n="work-in-progress-a-spectral-synthesiser-with-">Work in progress: a spectral synthesiser with Bayesian inference for stellar diagnostics and atmospheric parameters.</p>
+<a class="text-link" data-i18n="development-repository" href="https://github.com/luisgonzalezramirez" rel="noopener" target="_blank">Development repository →</a>
+</article>
+</div>
+</section>
+<section class="section publications-section" id="publications">
+<div class="section-heading-row">
+<div>
+<p class="section-kicker" data-i18n="publications-2">Publications</p>
+<h2 data-i18n="articles-and-conference-contributions">Articles and conference contributions</h2>
+</div>
+<a class="button secondary compact" data-i18n="all-publications-on-ads" href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Gonz%C3%A1lez-Ram%C3%ADrez%2C%20L.%22&amp;sort=date%20desc%2C%20bibcode%20desc" rel="noopener" target="_blank">All publications on ADS</a>
+</div>
+<div class="publication-grid">
+<article class="publication-card">
+<p class="badge" data-i18n="refereed-article">Refereed article</p>
+<h3>Chronos: Towards a self-consistent and absolute stellar age scale</h3>
+<p class="publication-meta">L. González-Ramírez et al. · Astronomy &amp; Astrophysics, 710, A407 (2026)</p>
+<p data-i18n="bayesian-hierarchical-lithium-age-model-valid">Bayesian hierarchical lithium-age model validated on the Pleiades, combining lithium abundances, effective temperatures and a neural-network emulator trained on BT-Settl predictions.</p>
+<div class="button-row small-buttons">
+<a class="button primary compact" data-i18n="a-a-article" href="https://www.aanda.org/articles/aa/full_html/2026/06/aa59708-26/aa59708-26.html" rel="noopener" target="_blank">A&amp;A article</a>
+<a class="button secondary compact" href="https://ui.adsabs.harvard.edu/abs/2026A%26A...710A.407G/abstract" rel="noopener" target="_blank">ADS</a>
+<a class="button secondary compact" href="assets/pdf/chronos_aanda_2026.pdf" rel="noopener" target="_blank">PDF</a>
+<a class="button secondary compact" data-i18n="presentation" href="talk_chronos.html">Presentation</a>
+</div>
+</article>
+<article class="publication-card">
+<p class="badge" data-i18n="conference-contribution">Conference contribution</p>
+<h3 data-i18n="teaching-astronomy-with-the-virtual-observato">Teaching Astronomy with the Virtual Observatory</h3>
+<p class="publication-meta">XVI Reunión Científica de la Sociedad Española de Astronomía · 2025</p>
+<p data-i18n="educational-material-and-practical-activities">Educational material and practical activities based on the Spanish Virtual Observatory, designed to introduce astronomical data access and analysis in teaching contexts.</p>
+<div class="button-row small-buttons">
+<a class="button primary compact" data-i18n="svo-page" href="https://svo.cab.inta-csic.es/?page_id=148" rel="noopener" target="_blank">SVO page</a>
+<a class="button secondary compact" href="assets/pdf/SEA_proceedings_2025.pdf" rel="noopener" target="_blank">PDF</a>
+</div>
+</article>
+</div>
+</section>
+<section class="section astrophotography-section" id="astrophotography">
+<div class="section-heading-row">
+<div>
+<p class="section-kicker" data-i18n="astrophotography-3">Astrophotography</p>
+<h2 data-i18n="images-from-the-night-sky">Images from the night sky</h2>
+</div>
+<p class="section-note astro-note" data-i18n="passionate-about-bringing-the-cosmos-closer-t">Passionate about bringing the Cosmos closer to people and preserving memories from my observing nights, from my first 90 mm Cassegrain to my current SkyWatcher 150 mm. Capturing images with a Canon R50 camera, I have enjoyed more than ten years of glimpsing the wonders hidden in the starry night. Here are some of them.</p>
+</div>
+<figure aria-label="Astrophotography observing setup" class="section-visual-card astro-section-visual">
+<img alt="SkyWatcher telescope prepared at sunset for an observing night" src="assets/img/astro/tel.jpg"/>
+<figcaption class="section-visual-caption">
+<strong data-i18n="skywatcher-telescope-prepared">SkyWatcher telescope prepared</strong>
+<span data-i18n="observing-nights-preparation-and-patient-capt">Observing nights, preparation and patient captures under changing skies.</span>
+</figcaption>
+</figure>
+<div class="gallery-grid" id="astro-gallery"></div>
+</section>
+<section class="section outreach-section" id="outreach">
+<div class="section-heading-row">
+<div>
+<p class="section-kicker" data-i18n="outreach-2">Outreach</p>
+<h2 data-i18n="bringing-the-cosmos-closer">Bringing the Cosmos closer</h2>
+</div>
+</div>
+<article class="outreach-card outreach-feature-card">
+<img alt="Night astronomy outreach activity with Astroafición" class="outreach-feature-photo" src="assets/img/outreach/astro_intro.JPG"/>
+<div class="outreach-content">
+<img alt="Astroafición logo" class="outreach-logo" src="assets/img/outreach/logo_astro.png"/>
+<p data-i18n="alongside-my-research-and-astrophotography-i-">Alongside my research and astrophotography, I participate as an astronomy monitor in leisure and outreach activities with Astroafición. My goal is to bring the mysteries and beauty of the Cosmos to audiences of all ages in an accessible, entertaining and memorable way.</p>
+<a class="button primary compact" data-i18n="visit-astroafici-n" href="https://astroaficion.com/" rel="noopener" target="_blank">Visit Astroafición →</a>
+</div>
+</article>
+<div aria-label="Astroafición outreach activities" class="outreach-square-grid">
+<img alt="Preparing a Dobsonian telescope during an Astroafición activity" class="outreach-square-photo" src="assets/img/outreach/astro_1.jpg"/>
+<img alt="Explaining telescope observations during an Astroafición activity" class="outreach-square-photo" src="assets/img/outreach/astro_2.jpg"/>
+<img alt="Astronomy outreach talk for students" class="outreach-square-photo" src="assets/img/outreach/charla.jpg"/>
+</div>
+</section>
+<section class="section cv-section" id="cv">
+<p class="section-kicker" data-i18n="profile">Profile</p>
+<h2>Curriculum vitae</h2>
+<p class="section-intro" data-i18n="choose-a-language-to-preview-the-cv-inside-th">Choose a language to preview the CV inside the page. The direct PDF links remain available for download or opening in a new tab.</p>
+<div aria-label="CV language selector" class="cv-selector" role="tablist">
+<button class="cv-tab active" data-cv="assets/pdf/CV_Luis_Gonzalez_Ramirez_EN.pdf" data-label="English CV" type="button">🇬🇧 English</button>
+<button class="cv-tab" data-cv="assets/pdf/CV_Luis_Gonzalez_Ramirez_ES.pdf" data-label="Spanish CV" type="button">🇪🇸 Español</button>
+</div>
+<div class="cv-viewer-card">
+<div class="cv-viewer-toolbar">
+<strong id="cv-current-label">English CV</strong>
+<div aria-label="CV page controls" class="cv-controls">
+<button class="panel-button compact-control" data-i18n="previous" id="cv-prev" type="button">← Previous</button>
+<span id="cv-page-label">Page 1 / …</span>
+<button class="panel-button compact-control" data-i18n="next" id="cv-next" type="button">Next →</button>
+</div>
+<a class="text-link" data-i18n="open-pdf-in-new-tab" href="assets/pdf/CV_Luis_Gonzalez_Ramirez_EN.pdf" id="cv-open-link" rel="noopener" target="_blank">Open PDF in new tab →</a>
+</div>
+<div class="cv-canvas-shell">
+<canvas aria-label="CV preview" id="cv-canvas"></canvas>
+<p class="cv-fallback" data-i18n="your-browser-could-not-render-the-pdf-preview" hidden="" id="cv-fallback">Your browser could not render the PDF preview here. Use the link above to open it.</p>
+</div>
+</div>
+</section>
+<section class="section links-section" id="links">
+<p class="section-kicker" data-i18n="repositories-and-profiles">Repositories and profiles</p>
+<h2 data-i18n="code-identifiers-and-social-links">Code, identifiers and social links</h2>
+<div class="link-grid">
+<a class="link-card" href="https://github.com/luisgonzalezramirez" rel="noopener" target="_blank">
+<span aria-hidden="true" class="link-logo image-logo"><img alt="" src="assets/img/social/github_logo.png"/></span>
+<h3>GitHub</h3>
+<p>@luisgonzalezramirez</p>
+</a>
+<a class="link-card" href="https://orcid.org/0009-0008-8152-8435" rel="noopener" target="_blank">
+<span aria-hidden="true" class="link-logo image-logo"><img alt="" src="assets/img/social/orcid_logo.png"/></span>
+<h3>ORCID</h3>
+<p>0009-0008-8152-8435</p>
+</a>
+<a class="link-card" href="https://www.instagram.com/lewisjr27798/" rel="noopener" target="_blank">
+<span aria-hidden="true" class="link-logo image-logo"><img alt="" src="assets/img/social/instagram_logo.png"/></span>
+<h3>Instagram</h3>
+<p>@lewisjr27798</p>
+</a>
+<a class="link-card" href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_author%7D&amp;fq_author=(((author_facet_hier%3A%221%2FGonzalez-Ramirez%2C%20L%2FGonz%C3%A1lez-Ram%C3%ADrez%2C%20L%22%20OR%20author_facet_hier%3A%221%2FGonzalez-Ramirez%2C%20L%2FGonzalez-Ramirez%2C%20L%22))%20AND%20author_facet_hier%3A%221%2FGonzalez-Ramirez%2C%20L%2FGonz%C3%A1lez-Ram%C3%ADrez%2C%20L%22)&amp;q=author%3A%22Gonz%C3%A1lez-Ram%C3%ADrez%2C%20L.%22&amp;sort=date%20desc%2C%20bibcode%20desc&amp;p_=0" rel="noopener" target="_blank">
+<span aria-hidden="true" class="link-logo image-logo"><img alt="" src="assets/img/social/ads_logo.png"/></span>
+<h3>NASA ADS</h3>
+<p data-i18n="publication-list">Publication list</p>
+</a>
+</div><div class="contact-card"><h3 data-i18n="contact-title">Contact</h3><p><strong data-i18n="contact-main-email">Main email</strong>: <a href="mailto:lgrjr27798@gmail.com">lgrjr27798@gmail.com</a></p><p><strong data-i18n="contact-alt-emails">Alternative emails</strong>: <a href="mailto:luigon07@ucm.es">luigon07@ucm.es</a> · <a href="mailto:lgonzalez@cab.inta-csic.es">lgonzalez@cab.inta-csic.es</a></p></div>
+</section>
+</main>
+<footer class="site-footer">
+<p>© <span id="year"></span> Luis González Ramírez</p>
+<p data-i18n="footer-tagline">Astrophysics · Astrophotography · Astronomy</p>
+</footer>
+<script id="site-translations" type="application/json">{
+  "research": {
+    "en": "Research",
+    "es": "Investigación"
+  },
+  "publications": {
+    "en": "Publications",
+    "es": "Publicaciones"
+  },
+  "astrophotography": {
+    "en": "Astrophotography",
+    "es": "Astrofotografía"
+  },
+  "outreach": {
+    "en": "Outreach",
+    "es": "Divulgación"
+  },
+  "links": {
+    "en": "Links",
+    "es": "Enlaces"
+  },
+  "chronos-presentation": {
+    "en": "Chronos presentation",
+    "es": "Presentación de Chronos"
+  },
+  "3d-solar-map": {
+    "en": "3D Solar Map",
+    "es": "Mapa Solar 3D"
+  },
+  "astrophysics": {
+    "en": "Astrophysics",
+    "es": "Astrofísica"
+  },
+  "exploring-the-cosmos-through-stars-images-and": {
+    "en": "Exploring the Cosmos through stars, images and more.",
+    "es": "Explorando el Cosmos a través de estrellas, imágenes y mucho más."
+  },
+  "i-work-on-stellar-ages-at-the-centro-de-astro": {
+    "en": "I work on stellar ages at the Centro de Astrobiología (CAB), combining Bayesian inference, stellar diagnostics and young stellar populations. This site brings together my research, publications, code, astrophotography and an interactive 3D atlas of the solar neighbourhood.",
+    "es": "Trabajo en edades estelares en el Centro de Astrobiología (CAB), combinando inferencia bayesiana, diagnósticos estelares y poblaciones estelares jóvenes. Esta web reúne mi investigación, publicaciones, código, astrofotografía y un atlas 3D interactivo del vecindario solar."
+  },
+  "launch-3d-solar-map": {
+    "en": "Launch 3D Solar Map",
+    "es": "Abrir el Mapa Solar 3D"
+  },
+  "chronos-presentation-2": {
+    "en": "Chronos presentation",
+    "es": "Presentación de Chronos"
+  },
+  "view-publications": {
+    "en": "View publications",
+    "es": "Ver publicaciones"
+  },
+  "astrophotography-2": {
+    "en": "Astrophotography",
+    "es": "Astrofotografía"
+  },
+  "solar-neighbourhood-atlas": {
+    "en": "Solar Neighbourhood Atlas",
+    "es": "Atlas del Vecindario Solar"
+  },
+  "interactive-3d-map-with-nearby-stars-open-clu": {
+    "en": "Interactive 3D map with nearby stars, open clusters, molecular clouds and local dust structures.",
+    "es": "Mapa 3D interactivo con estrellas cercanas, cúmulos abiertos, nubes moleculares y estructuras de polvo local."
+  },
+  "open-the-map": {
+    "en": "Open the map →",
+    "es": "Abrir el mapa →"
+  },
+  "chronos-article": {
+    "en": "Chronos article",
+    "es": "Artículo de Chronos"
+  },
+  "pdf-presentation-about-the-chronos-article-ba": {
+    "en": "PDF presentation about the Chronos article, Bayesian inference and stellar ages.",
+    "es": "Presentación en PDF sobre el artículo de Chronos, inferencia bayesiana y edades estelares."
+  },
+  "open-the-presentation": {
+    "en": "Open the presentation →",
+    "es": "Abrir la presentación →"
+  },
+  "research-2": {
+    "en": "Research",
+    "es": "Investigación"
+  },
+  "stellar-ages-bayesian-inference-and-spectral-": {
+    "en": "Stellar ages, Bayesian inference and spectral studies",
+    "es": "Edades estelares, inferencia bayesiana y estudios espectrales"
+  },
+  "bayesian-hierarchical-age-inference-for-young": {
+    "en": "Bayesian hierarchical age inference for young stellar populations using lithium abundances, effective temperatures and neural-network emulators.",
+    "es": "Inferencia jerárquica bayesiana de edades para poblaciones estelares jóvenes usando abundancias de litio, temperaturas efectivas y emuladores de redes neuronales."
+  },
+  "code-on-github": {
+    "en": "Code on GitHub →",
+    "es": "Código en GitHub →"
+  },
+  "solar-neighbourhood-atlas-2": {
+    "en": "Solar neighbourhood atlas",
+    "es": "Atlas del vecindario solar"
+  },
+  "interactive-3d-context-for-bright-stars-open-": {
+    "en": "Interactive 3D context for bright stars, open clusters, associations, molecular clouds and nearby dust structures.",
+    "es": "Contexto 3D interactivo para estrellas brillantes, cúmulos abiertos, asociaciones, nubes moleculares y estructuras cercanas de polvo."
+  },
+  "open-3d-map": {
+    "en": "Open 3D map →",
+    "es": "Abrir mapa 3D →"
+  },
+  "spectral-synthesis-and-inference": {
+    "en": "Spectral synthesis and inference",
+    "es": "Síntesis espectral e inferencia"
+  },
+  "work-in-progress-a-spectral-synthesiser-with-": {
+    "en": "Work in progress: a spectral synthesiser with Bayesian inference for stellar diagnostics and atmospheric parameters.",
+    "es": "Trabajo en curso: un sintetizador espectral con inferencia bayesiana para diagnósticos estelares y parámetros atmosféricos."
+  },
+  "development-repository": {
+    "en": "Development repository →",
+    "es": "Repositorio de desarrollo →"
+  },
+  "publications-2": {
+    "en": "Publications",
+    "es": "Publicaciones"
+  },
+  "articles-and-conference-contributions": {
+    "en": "Articles and conference contributions",
+    "es": "Artículos y contribuciones a congresos"
+  },
+  "all-publications-on-ads": {
+    "en": "All publications on ADS",
+    "es": "Todas las publicaciones en ADS"
+  },
+  "refereed-article": {
+    "en": "Refereed article",
+    "es": "Artículo revisado por pares"
+  },
+  "bayesian-hierarchical-lithium-age-model-valid": {
+    "en": "Bayesian hierarchical lithium-age model validated on the Pleiades, combining lithium abundances, effective temperatures and a neural-network emulator trained on BT-Settl predictions.",
+    "es": "Modelo jerárquico bayesiano litio-edad validado en las Pléyades, combinando abundancias de litio, temperaturas efectivas y un emulador de red neuronal entrenado con predicciones BT-Settl."
+  },
+  "a-a-article": {
+    "en": "A&A article",
+    "es": "Artículo A&A"
+  },
+  "presentation": {
+    "en": "Presentation",
+    "es": "Presentación"
+  },
+  "conference-contribution": {
+    "en": "Conference contribution",
+    "es": "Contribución a congreso"
+  },
+  "teaching-astronomy-with-the-virtual-observato": {
+    "en": "Teaching Astronomy with the Virtual Observatory",
+    "es": "Enseñanza de la Astronomía con el Observatorio Virtual"
+  },
+  "educational-material-and-practical-activities": {
+    "en": "Educational material and practical activities based on the Spanish Virtual Observatory, designed to introduce astronomical data access and analysis in teaching contexts.",
+    "es": "Material educativo y actividades prácticas basadas en el Observatorio Virtual Español, diseñadas para introducir el acceso y análisis de datos astronómicos en contextos docentes."
+  },
+  "svo-page": {
+    "en": "SVO page",
+    "es": "Página SVO"
+  },
+  "astrophotography-3": {
+    "en": "Astrophotography",
+    "es": "Astrofotografía"
+  },
+  "images-from-the-night-sky": {
+    "en": "Images from the night sky",
+    "es": "Imágenes del cielo nocturno"
+  },
+  "passionate-about-bringing-the-cosmos-closer-t": {
+    "en": "Passionate about bringing the Cosmos closer to people and preserving memories from my observing nights, from my first 90 mm Cassegrain to my current SkyWatcher 150 mm. Capturing images with a Canon R50 camera, I have enjoyed more than ten years of glimpsing the wonders hidden in the starry night. Here are some of them.",
+    "es": "Apasionado por acercar el Cosmos a la gente y conservar recuerdos de mis noches de observación, desde mi primer Cassegrain de 90 mm hasta mi actual SkyWatcher de 150 mm. Capturando imágenes con una cámara Canon R50, he disfrutado durante más de diez años observando algunas de las maravillas ocultas en la noche estrellada. Aquí van algunas de ellas."
+  },
+  "skywatcher-telescope-prepared": {
+    "en": "SkyWatcher telescope prepared",
+    "es": "Telescopio SkyWatcher preparado"
+  },
+  "observing-nights-preparation-and-patient-capt": {
+    "en": "Observing nights, preparation and patient captures under changing skies.",
+    "es": "Noches de observación, preparación y capturas pacientes bajo cielos cambiantes."
+  },
+  "outreach-2": {
+    "en": "Outreach",
+    "es": "Divulgación"
+  },
+  "bringing-the-cosmos-closer": {
+    "en": "Bringing the Cosmos closer",
+    "es": "Acercando el Cosmos"
+  },
+  "alongside-my-research-and-astrophotography-i-": {
+    "en": "Alongside my research and astrophotography, I participate as an astronomy monitor in leisure and outreach activities with Astroafición. My goal is to bring the mysteries and beauty of the Cosmos to audiences of all ages in an accessible, entertaining and memorable way.",
+    "es": "Junto a mi investigación y astrofotografía, participo como monitor de astronomía en actividades de ocio y divulgación con Astroafición. Mi objetivo es acercar los misterios y la belleza del Cosmos a públicos de todas las edades de forma accesible, entretenida y memorable."
+  },
+  "visit-astroafici-n": {
+    "en": "Visit Astroafición →",
+    "es": "Visitar Astroafición →"
+  },
+  "profile": {
+    "en": "Profile",
+    "es": "Perfil"
+  },
+  "choose-a-language-to-preview-the-cv-inside-th": {
+    "en": "Choose a language to preview the CV inside the page. The direct PDF links remain available for download or opening in a new tab.",
+    "es": "Elige un idioma para previsualizar el CV dentro de la página. Los enlaces directos al PDF siguen disponibles para descargarlo o abrirlo en una nueva pestaña."
+  },
+  "previous": {
+    "en": "← Previous",
+    "es": "← Anterior"
+  },
+  "next": {
+    "en": "Next →",
+    "es": "Siguiente →"
+  },
+  "open-pdf-in-new-tab": {
+    "en": "Open PDF in new tab →",
+    "es": "Abrir PDF en nueva pestaña →"
+  },
+  "your-browser-could-not-render-the-pdf-preview": {
+    "en": "Your browser could not render the PDF preview here. Use the link above to open it.",
+    "es": "Tu navegador no ha podido renderizar aquí la vista previa del PDF. Usa el enlace superior para abrirlo."
+  },
+  "repositories-and-profiles": {
+    "en": "Repositories and profiles",
+    "es": "Repositorios y perfiles"
+  },
+  "code-identifiers-and-social-links": {
+    "en": "Code, identifiers and social links",
+    "es": "Código, identificadores y enlaces sociales"
+  },
+  "publication-list": {
+    "en": "Publication list",
+    "es": "Lista de publicaciones"
+  },
+  "contact": {
+    "en": "Contact",
+    "es": "Contacto"
+  },
+  "main-email": {
+    "en": "Main email",
+    "es": "Correo principal"
+  },
+  "alternative-emails": {
+    "en": "Alternative emails",
+    "es": "Correos alternativos"
+  },
+  "astrophysics-astrophotography-astronomy": {
+    "en": "Astrophysics · Astrophotography · Astronomy",
+    "es": "Astrofísica · Astrofotografía · Astronomía"
+  },
+  "contact-title": {
+    "en": "Contact",
+    "es": "Contacto"
+  },
+  "contact-main-email": {
+    "en": "Main email",
+    "es": "Correo principal"
+  },
+  "contact-alt-emails": {
+    "en": "Alternative emails",
+    "es": "Correos alternativos"
+  },
+  "footer-tagline": {
+    "en": "Astrophysics · Astrophotography · Astronomy",
+    "es": "Astrofísica · Astrofotografía · Astronomía"
+  }
+}</script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="assets/js/gallery.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

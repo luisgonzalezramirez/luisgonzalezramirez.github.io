@@ -1,43 +1,27 @@
+# Luis González Ramírez personal website — v1.1
 
-# Luis González Ramírez personal website — v1 content update
+Personal website for research, astrophotography, outreach material and the interactive 3D Solar Neighbourhood Atlas.
 
-This folder contains the updated landing page and asset structure.
+## v1.1 changes
 
-## Main changes
+- Added an English/Spanish language selector at the top-left of the navigation bar.
+- Updated the site tagline to `Astrophysics · Astrophotography · Astronomy`.
+- Added a contact block under the profile/social links:
+  - main: `lgrjr27798@gmail.com`
+  - alternatives: `luigon07@ucm.es`, `lgonzalez@cab.inta-csic.es`
+- Updated the astrophotography gallery to use thumbnail images in `assets/img/astro/thumbs/` while opening the full-resolution image in the modal/link.
+- Added Spanish metadata for gallery cards.
+- Kept the current map state unchanged.
+- Removed personal/update notes from the tracked repository.
 
-- Removed the institutional logo strip (CAB / INTA / CSIC / etc.) from the landing page.
-- Added a full astrophotography gallery with placeholder images for:
-  M8, M13, M16, M42, M1, Moon, Milky Way from Tendilla, M81–M82, M51, M51 field galaxies and M51 zoom / IC 4278.
-- Added bilingual CV selector with embedded PDF viewer.
-- Added publication cards, A&A/ADS links, local PDF slots and QR codes.
-- Added GitHub, ORCID, Instagram and ADS profile links.
-
-## Files to replace with real content
-
-Keep the same filenames or edit `assets/js/gallery.js`.
-
-### PDFs
-Add these files:
-
-```text
-assets/pdf/CV_Luis_Gonzalez_Ramirez_EN.pdf
-assets/pdf/CV_Luis_Gonzalez_Ramirez_ES.pdf
-assets/pdf/chronos_aanda_2026.pdf
-assets/pdf/hsa_proceedings_2025.pdf
-```
-
-## Run locally
+## Local test
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open:
+Then open `http://localhost:8000`.
 
-```text
-http://localhost:8000
-```
+## Important file-name note
 
-## Important note about the map
-
-This package includes the uploaded data files and `map.html`. In this turn, the full `assets/js/solar-map.js` renderer was not included among the sandbox files, so I left a clear placeholder file. Replace it with the real `solar-map.js` from the current map prototype to restore the interactive Three.js map.
+GitHub Pages is case-sensitive. Keep image extensions and names exactly as referenced from HTML/JS, especially `.JPG`, `.jpg` and `.PNG`.
