@@ -37,23 +37,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const normalized = lang === 'es' ? 'es' : 'en';
     localStorage.setItem('site-language', normalized);
     document.documentElement.lang = normalized;
+
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const value = siteTranslations[el.dataset.i18n]?.[normalized];
       if (typeof value === 'string') el.textContent = value;
     });
+
+    document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+      const value = siteTranslations[el.dataset.i18nHtml]?.[normalized];
+      if (typeof value === 'string') el.innerHTML = value;
+    });
+
     document.querySelectorAll('.lang-button').forEach((button) => {
       const active = button.dataset.lang === normalized;
       button.classList.toggle('active', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    document.title = normalized === 'es' ? 'Luis González Ramírez | Astrofísica' : 'Luis González Ramírez | Astrophysics';
+
+    const translatedTitle = siteTranslations.__title?.[normalized];
+    if (translatedTitle) document.title = translatedTitle;
+    const translatedDescription = siteTranslations.__description?.[normalized];
+    if (translatedDescription) {
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute('content', translatedDescription);
+    }
+
+    document.dispatchEvent(new CustomEvent('site-language-change', { detail: { lang: normalized } }));
   }
 
-  document.querySelectorAll('.lang-button').forEach((button) => {
-    button.addEventListener('click', () => {
-      applyLanguage(button.dataset.lang);
-      renderAstroGallery();
-    });
+  document.addEventListener('click', (event) => {
+    const button = event.target.closest('.lang-button');
+    if (!button) return;
+    event.preventDefault();
+    applyLanguage(button.dataset.lang);
+    renderAstroGallery();
   });
 
   function ensureImageModal() {
@@ -131,6 +148,14 @@ document.addEventListener('DOMContentLoaded', () => {
   applyLanguage(getCurrentLanguage());
   renderAstroGallery();
 
+  document.addEventListener('site-language-change', () => {
+    const activeCv = document.querySelector('.cv-tab.active');
+    if (activeCv && document.querySelector('#cv-current-label')) {
+      document.querySelector('#cv-current-label').textContent = getCurrentLanguage() === 'es' ? (activeCv.dataset.labelEs || activeCv.dataset.label || activeCv.textContent.trim()) : (activeCv.dataset.label || activeCv.textContent.trim());
+    }
+    updateCvControls?.();
+  });
+
   const cvCanvas = document.querySelector('#cv-canvas');
   const cvOpen = document.querySelector('#cv-open-link');
   const cvLabel = document.querySelector('#cv-current-label');
@@ -144,9 +169,17 @@ document.addEventListener('DOMContentLoaded', () => {
   let cvPendingPage = null;
   let cvUrl = document.querySelector('.cv-tab.active')?.dataset.cv || 'assets/pdf/CV_Luis_Gonzalez_Ramirez_EN.pdf';
 
+  function syncCvLanguageLabel() {
+    const activeCv = document.querySelector('.cv-tab.active');
+    if (activeCv && cvLabel) {
+      cvLabel.textContent = getCurrentLanguage() === 'es' ? (activeCv.dataset.labelEs || activeCv.dataset.label || activeCv.textContent.trim()) : (activeCv.dataset.label || activeCv.textContent.trim());
+    }
+  }
+
   function updateCvControls() {
+    syncCvLanguageLabel();
     const total = cvPdf ? cvPdf.numPages : '…';
-    if (cvPageLabel) cvPageLabel.textContent = `Page ${cvPage} / ${total}`;
+    if (cvPageLabel) cvPageLabel.textContent = `${getCurrentLanguage() === 'es' ? 'Página' : 'Page'} ${cvPage} / ${total}`;
     if (cvPrev) cvPrev.disabled = cvPage <= 1 || !cvPdf;
     if (cvNext) cvNext.disabled = !cvPdf || cvPage >= cvPdf.numPages;
   }
@@ -209,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.cv-tab').forEach((b) => b.classList.remove('active'));
       button.classList.add('active');
       const url = button.dataset.cv;
-      const label = button.dataset.label || button.textContent.trim();
+      const label = getCurrentLanguage() === 'es' ? (button.dataset.labelEs || button.dataset.label || button.textContent.trim()) : (button.dataset.label || button.textContent.trim());
       if (cvOpen) cvOpen.setAttribute('href', url);
       if (cvLabel) cvLabel.textContent = label;
       loadCv(url);

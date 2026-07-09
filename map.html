@@ -3,82 +3,227 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3D Solar Neighbourhood Map | Prototype</title>
+  <title>3D Solar Neighbourhood Map | Luis González Ramírez</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body class="map-page">
   <header class="site-header glass">
     <nav class="navbar">
-      <a class="brand" href="index.html">
-        <span>Luis González Ramírez</span>
-      </a>
+      <div class="language-switcher" aria-label="Language selector">
+        <button class="lang-button active" data-lang="en" type="button" aria-label="English" aria-pressed="true" title="English">🇬🇧</button>
+        <button class="lang-button" data-lang="es" type="button" aria-label="Español" aria-pressed="false" title="Español">🇪🇸</button>
+      </div>
+      <a class="brand" href="index.html" aria-label="Home"><span>Luis González Ramírez</span></a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="index.html#research">Research</a>
-        <a href="index.html#publications">Publications</a>
-        <a href="index.html#astrophotography">Astrophotography</a>
+        <a href="index.html" data-i18n="nav-home">Home</a>
+        <a href="index.html#research" data-i18n="nav-research">Research</a>
+        <a href="index.html#publications" data-i18n="nav-publications">Publications</a>
+        <a href="index.html#astrophotography" data-i18n="nav-astrophotography">Astrophotography</a>
+        <a href="index.html#outreach" data-i18n="nav-outreach">Outreach</a>
         <a href="index.html#cv">CV</a>
-        <a href="talk_chronos.html" class="nav-cta">Chronos presentation</a>
-        <a href="index.html">Home</a>
+        <a href="talk_chronos.html" class="nav-cta" data-i18n="nav-chronos">Chronos presentation</a>
       </div>
     </nav>
   </header>
 
   <main class="map-shell">
     <section class="map-intro">
-      <p class="eyebrow">Interactive prototype module</p>
-      <h1>3D Solar Neighbourhood Map</h1>
-      <p>
-        Rotatable Three.js atlas of the local Galactic volume. Open clusters are shown as stellar populations with bright named members. The data layer is prepared for the 400 pc thesis catalogue: bright stars, open clusters, molecular clouds and dust surfaces exported from the Python pipeline. Click a cluster label to orbit around it. Molecular clouds and H5 dust are rendered as softer volumetric 3D structures for clarity and speed.
-      </p>
+      <p class="eyebrow" data-i18n="map-eyebrow">Interactive prototype module</p>
+      <h1 data-i18n="map-title">3D Solar Neighbourhood Map</h1>
+      <p data-i18n="map-description">Rotatable Three.js atlas of the local Galactic volume. Open clusters are shown as stellar populations with bright named members. The data layer is prepared for the 400 pc thesis catalogue: bright stars, open clusters, molecular clouds and dust surfaces exported from the Python pipeline. Click a cluster label to orbit around it. Molecular clouds and H5 dust are rendered as softer volumetric 3D structures for clarity and speed.</p>
     </section>
 
     <section class="map-layout">
       <aside class="map-panel">
-        <h2>Layers</h2>
-        <label><input type="checkbox" data-layer="stars" checked /> Bright stars</label>
-        <label><input type="checkbox" data-layer="constellationStars" checked /> Top constellation stars</label>
-        <label><input type="checkbox" data-layer="clusters" checked /> Open cluster labels</label>
-        <label><input type="checkbox" data-layer="clusterMembers" checked /> Cluster stellar populations</label>
-        <label><input type="checkbox" data-layer="regions" checked /> Zucker molecular clouds</label>
-        <label><input type="checkbox" data-layer="dustVoxels" checked /> Lallement/STILISM dust clouds</label>
-        <label><input type="checkbox" data-layer="reference" checked /> Subtle 50/100/200/300/400 pc references</label>
-        <label><input type="checkbox" data-layer="labels" checked /> Labels</label>
+        <h2 data-i18n="layers">Layers</h2>
+        <label><input type="checkbox" data-layer="stars" checked /> <span data-i18n="bright-stars">Bright stars</span></label>
+        <label><input type="checkbox" data-layer="constellationStars" checked /> <span data-i18n="top-constellation-stars">Top constellation stars</span></label>
+        <label><input type="checkbox" data-layer="clusters" checked /> <span data-i18n="open-cluster-labels">Open cluster labels</span></label>
+        <label><input type="checkbox" data-layer="clusterMembers" checked /> <span data-i18n="cluster-stellar-populations">Cluster stellar populations</span></label>
+        <label><input type="checkbox" data-layer="regions" checked /> <span data-i18n="zucker-molecular-clouds">Zucker molecular clouds</span></label>
+        <label><input type="checkbox" data-layer="dustVoxels" checked /> <span data-i18n="lallement-dust-clouds">Lallement/STILISM dust clouds</span></label>
+        <label><input type="checkbox" data-layer="reference" checked /> <span data-i18n="pc-references">Subtle 50/100/200/300/400 pc references</span></label>
+        <label><input type="checkbox" data-layer="labels" checked /> <span data-i18n="labels">Labels</span></label>
 
-        <h2>View</h2>
-        <button class="panel-button" data-view="xy">Galactic plane</button>
-        <button class="panel-button" data-view="xz">Vertical cut</button>
-        <button class="panel-button" data-view="iso">Isometric</button>
-        <button class="panel-button" data-action="reset">Reset view</button>
-        <button class="panel-button primary-panel" data-action="fullscreen">Full screen map</button>
+        <h2 data-i18n="view">View</h2>
+        <button class="panel-button" data-view="xy" data-i18n="galactic-plane">Galactic plane</button>
+        <button class="panel-button" data-view="xz" data-i18n="vertical-cut">Vertical cut</button>
+        <button class="panel-button" data-view="iso" data-i18n="isometric">Isometric</button>
+        <button class="panel-button" data-action="reset" data-i18n="reset-view">Reset view</button>
+        <button class="panel-button primary-panel" data-action="fullscreen" data-i18n="full-screen-map">Full screen map</button>
 
+        <h2 data-i18n="data-references">Data references</h2>
+        <p class="map-reference-note"><span data-i18n="data-reference-note">Dust structures use the local interstellar dust maps of Lallement et al. (2019). Molecular-cloud distances and complexes are based on Zucker et al. (2020).</span></p>
 
-
-        <h2>Data references</h2>
-        <p class="map-reference-note">Dust structures use the local interstellar dust maps of <a href="https://ui.adsabs.harvard.edu/abs/2019A%26A...625A.135L/abstract" target="_blank" rel="noopener">Lallement et al. (2019)</a>. Molecular-cloud distances and complexes are based on <a href="https://ui.adsabs.harvard.edu/abs/2020A%26A...633A..51Z/abstract" target="_blank" rel="noopener">Zucker et al. (2020)</a>.</p>
-
-        <h2>Selected object</h2>
+        <h2 data-i18n="selected-object">Selected object</h2>
         <div class="object-card" id="selected-object">
-          <strong>Sun</strong>
-          <span>Distance: 0 pc</span>
-          <span>Frame: Galactic Cartesian</span>
-          <span>Click or hover over an object.</span>
+          <strong data-i18n="sun">Sun</strong>
+          <span data-i18n="distance-zero">Distance: 0 pc</span>
+          <span data-i18n="frame-galactic">Frame: Galactic Cartesian</span>
+          <span data-i18n="click-hover">Click or hover over an object.</span>
         </div>
       </aside>
 
       <div class="map-stage interactive" id="map-stage" aria-label="Interactive 3D solar neighbourhood map">
         <div id="solar-map"></div>
         <div id="label-layer" aria-hidden="true"></div>
-        <div class="map-loader" id="map-loader">Loading 3D atlas…</div>
-        <div class="map-note">Drag to rotate · Scroll to zoom · Click a cluster to centre the view</div>
+        <div class="map-loader" id="map-loader" data-i18n="map-loader">Loading 3D atlas…</div>
+        <div class="map-note" data-i18n="map-note">Drag to rotate · Scroll to zoom · Click a cluster to centre the view</div>
       </div>
     </section>
   </main>
 
-  <script src="assets/js/main.js"></script>
+  <script id="site-translations" type="application/json">{
+  "__title": {
+    "en": "3D Solar Neighbourhood Map | Luis González Ramírez",
+    "es": "Mapa 3D del entorno solar | Luis González Ramírez"
+  },
+  "nav-home": {
+    "en": "Home",
+    "es": "Inicio"
+  },
+  "nav-research": {
+    "en": "Research",
+    "es": "Investigación"
+  },
+  "nav-publications": {
+    "en": "Publications",
+    "es": "Publicaciones"
+  },
+  "nav-astrophotography": {
+    "en": "Astrophotography",
+    "es": "Astrofotografía"
+  },
+  "nav-outreach": {
+    "en": "Outreach",
+    "es": "Divulgación"
+  },
+  "nav-chronos": {
+    "en": "Chronos presentation",
+    "es": "Presentación Chronos"
+  },
+  "nav-map": {
+    "en": "3D Solar Map",
+    "es": "Mapa Solar 3D"
+  },
+  "map-eyebrow": {
+    "en": "Interactive prototype module",
+    "es": "Módulo interactivo"
+  },
+  "map-title": {
+    "en": "3D Solar Neighbourhood Map",
+    "es": "Mapa 3D del entorno solar"
+  },
+  "map-description": {
+    "en": "Rotatable Three.js atlas of the local Galactic volume. Open clusters are shown as stellar populations with bright named members. The data layer is prepared for the 400 pc thesis catalogue: bright stars, open clusters, molecular clouds and dust surfaces exported from the Python pipeline. Click a cluster label to orbit around it. Molecular clouds and H5 dust are rendered as softer volumetric 3D structures for clarity and speed.",
+    "es": "Atlas Three.js rotatorio del volumen galáctico local. Los cúmulos abiertos se muestran como poblaciones estelares con miembros brillantes identificados. La capa de datos está preparada para el catálogo de tesis de 400 pc: estrellas brillantes, cúmulos abiertos, nubes moleculares y superficies de polvo exportadas desde la tubería de Python. Pulsa en la etiqueta de un cúmulo para centrar la vista en él. Las nubes moleculares y el polvo H5 se representan como estructuras volumétricas suaves para mejorar claridad y rendimiento."
+  },
+  "layers": {
+    "en": "Layers",
+    "es": "Capas"
+  },
+  "bright-stars": {
+    "en": "Bright stars",
+    "es": "Estrellas brillantes"
+  },
+  "top-constellation-stars": {
+    "en": "Top constellation stars",
+    "es": "Estrellas principales por constelación"
+  },
+  "open-cluster-labels": {
+    "en": "Open cluster labels",
+    "es": "Etiquetas de cúmulos abiertos"
+  },
+  "cluster-stellar-populations": {
+    "en": "Cluster stellar populations",
+    "es": "Poblaciones estelares de cúmulos"
+  },
+  "zucker-molecular-clouds": {
+    "en": "Zucker molecular clouds",
+    "es": "Nubes moleculares de Zucker"
+  },
+  "lallement-dust-clouds": {
+    "en": "Lallement/STILISM dust clouds",
+    "es": "Nubes de polvo Lallement/STILISM"
+  },
+  "pc-references": {
+    "en": "Subtle 50/100/200/300/400 pc references",
+    "es": "Referencias suaves de 50/100/200/300/400 pc"
+  },
+  "labels": {
+    "en": "Labels",
+    "es": "Etiquetas"
+  },
+  "view": {
+    "en": "View",
+    "es": "Vista"
+  },
+  "galactic-plane": {
+    "en": "Galactic plane",
+    "es": "Plano galáctico"
+  },
+  "vertical-cut": {
+    "en": "Vertical cut",
+    "es": "Corte vertical"
+  },
+  "isometric": {
+    "en": "Isometric",
+    "es": "Isométrica"
+  },
+  "reset-view": {
+    "en": "Reset view",
+    "es": "Restablecer vista"
+  },
+  "full-screen-map": {
+    "en": "Full screen map",
+    "es": "Mapa a pantalla completa"
+  },
+  "exit-full-screen": {
+    "en": "Exit full screen",
+    "es": "Salir de pantalla completa"
+  },
+  "data-references": {
+    "en": "Data references",
+    "es": "Referencias de datos"
+  },
+  "data-reference-note": {
+    "en": "Dust structures use the local interstellar dust maps of Lallement et al. (2019). Molecular-cloud distances and complexes are based on Zucker et al. (2020).",
+    "es": "Las estructuras de polvo usan los mapas locales de polvo interestelar de Lallement et al. (2019). Las distancias y complejos de nubes moleculares se basan en Zucker et al. (2020)."
+  },
+  "selected-object": {
+    "en": "Selected object",
+    "es": "Objeto seleccionado"
+  },
+  "sun": {
+    "en": "Sun",
+    "es": "Sol"
+  },
+  "distance-zero": {
+    "en": "Distance: 0 pc",
+    "es": "Distancia: 0 pc"
+  },
+  "frame-galactic": {
+    "en": "Frame: Galactic Cartesian",
+    "es": "Sistema: cartesiano galáctico"
+  },
+  "click-hover": {
+    "en": "Click or hover over an object.",
+    "es": "Pulsa o pasa el cursor sobre un objeto."
+  },
+  "map-loader": {
+    "en": "Loading 3D atlas…",
+    "es": "Cargando atlas 3D…"
+  },
+  "map-note": {
+    "en": "Drag to rotate · Scroll to zoom · Click a cluster to centre the view",
+    "es": "Arrastra para rotar · Rueda para ampliar · Pulsa un cúmulo para centrar la vista"
+  }
+}</script>
+  <script src="assets/js/main.js?v=1.2"></script>
   <script src="https://unpkg.com/three@0.128.0/build/three.min.js" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js';"></script>
   <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js';"></script>
-  <script src="assets/js/solar-data.js"></script>
-  <script src="assets/js/solar-map.js"></script>
+  <script src="assets/js/solar-data.js?v=1.2"></script>
+  <script src="assets/js/solar-map.js?v=1.2"></script>
 </body>
 </html>

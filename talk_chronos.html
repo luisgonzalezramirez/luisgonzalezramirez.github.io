@@ -10,17 +10,19 @@
 <body class="talk-page">
   <header class="site-header glass">
     <nav class="navbar">
-      <a class="brand" href="index.html" aria-label="Home">
-        <span>Luis González Ramírez</span>
-      </a>
+      <div class="language-switcher" aria-label="Language selector">
+        <button class="lang-button active" data-lang="en" type="button" aria-label="English" aria-pressed="true" title="English">🇬🇧</button>
+        <button class="lang-button" data-lang="es" type="button" aria-label="Español" aria-pressed="false" title="Español">🇪🇸</button>
+      </div>
+      <a class="brand" href="index.html" aria-label="Home"><span>Luis González Ramírez</span></a>
       <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="index.html#research">Research</a>
-        <a href="index.html#publications">Publications</a>
-        <a href="index.html#astrophotography">Astrophotography</a>
+        <a href="index.html" data-i18n="nav-home">Home</a>
+        <a href="index.html#research" data-i18n="nav-research">Research</a>
+        <a href="index.html#publications" data-i18n="nav-publications">Publications</a>
+        <a href="index.html#astrophotography" data-i18n="nav-astrophotography">Astrophotography</a>
         <a href="index.html#cv">CV</a>
-        <a href="map.html" class="nav-cta">3D Solar Map</a>
+        <a href="map.html" class="nav-cta" data-i18n="nav-map">3D Solar Map</a>
       </div>
     </nav>
   </header>
@@ -29,13 +31,11 @@
     <section class="talk-intro">
       <img class="talk-logo" src="assets/img/logo.png" alt="Chronos logo" />
       <div>
-        <p class="eyebrow">Chronos article</p>
-        <h1>Chronos presentation</h1>
-        <p>
-          Slide presentation about the Chronos stellar-age model, the neural-network emulator and the Bayesian hierarchical validation on the Pleiades cluster.
-        </p>
+        <p class="eyebrow" data-i18n="chronos-article">Chronos article</p>
+        <h1 data-i18n="chronos-presentation-title">Chronos presentation</h1>
+        <p data-i18n="talk-description">Slide presentation about the Chronos stellar-age model, the neural-network emulator and the Bayesian hierarchical validation on the Pleiades cluster.</p>
         <div class="hero-actions compact-actions talk-actions">
-          <a class="button secondary" href="https://www.aanda.org/articles/aa/full_html/2026/06/aa59708-26/aa59708-26.html" target="_blank" rel="noopener">A&amp;A article</a>
+          <a class="button secondary" href="https://www.aanda.org/articles/aa/full_html/2026/06/aa59708-26/aa59708-26.html" target="_blank" rel="noopener" data-i18n="aa-article">A&amp;A article</a>
           <a class="button secondary" href="https://ui.adsabs.harvard.edu/abs/2026A%26A...710A.407G/abstract" target="_blank" rel="noopener">ADS</a>
         </div>
       </div>
@@ -44,56 +44,119 @@
     <section class="talk-viewer-card slide-deck-card" aria-label="Chronos slide deck">
       <div class="viewer-header slide-viewer-header">
         <div class="slide-title-block">
-          <strong>Chronos slide deck</strong>
-          <span>Use the buttons or keyboard arrows to move between slides.</span>
+          <strong data-i18n="slide-deck">Chronos slide deck</strong>
+          <span data-i18n="slide-help">Use the buttons or keyboard arrows to move between slides.</span>
         </div>
         <div class="pdf-controls" aria-label="Presentation controls">
-          <button class="panel-button compact-control" type="button" id="talk-prev">← Previous</button>
+          <button class="panel-button compact-control" type="button" id="talk-prev" data-i18n="previous">← Previous</button>
           <span id="talk-page-label">Slide 1 / 12</span>
-          <button class="panel-button compact-control" type="button" id="talk-next">Next →</button>
+          <button class="panel-button compact-control" type="button" id="talk-next" data-i18n="next">Next →</button>
         </div>
       </div>
       <div class="slide-stage" id="slide-stage">
-        <img id="talk-slide" src="assets/img/talk/slide_01.PNG" alt="Chronos presentation slide 1" />
+        <img id="talk-slide" src="assets/img/talk_en/slide_01.PNG" alt="Chronos presentation slide 1" />
       </div>
     </section>
   </main>
 
-  <script src="assets/js/main.js"></script>
+  <script id="site-translations" type="application/json">{
+  "__title": {
+    "en": "Chronos Presentation | Luis González Ramírez",
+    "es": "Presentación Chronos | Luis González Ramírez"
+  },
+  "nav-home": {
+    "en": "Home",
+    "es": "Inicio"
+  },
+  "nav-research": {
+    "en": "Research",
+    "es": "Investigación"
+  },
+  "nav-publications": {
+    "en": "Publications",
+    "es": "Publicaciones"
+  },
+  "nav-astrophotography": {
+    "en": "Astrophotography",
+    "es": "Astrofotografía"
+  },
+  "nav-map": {
+    "en": "3D Solar Map",
+    "es": "Mapa Solar 3D"
+  },
+  "chronos-article": {
+    "en": "Chronos article",
+    "es": "Artículo Chronos"
+  },
+  "chronos-presentation-title": {
+    "en": "Chronos presentation",
+    "es": "Presentación Chronos"
+  },
+  "talk-description": {
+    "en": "Slide presentation about the Chronos stellar-age model, the neural-network emulator and the Bayesian hierarchical validation on the Pleiades cluster.",
+    "es": "Presentación sobre el modelo Chronos de edades estelares, el emulador de red neuronal y la validación jerárquica bayesiana en el cúmulo de las Pléyades."
+  },
+  "aa-article": {
+    "en": "A&A article",
+    "es": "Artículo A&A"
+  },
+  "slide-deck": {
+    "en": "Chronos slide deck",
+    "es": "Diapositivas de Chronos"
+  },
+  "slide-help": {
+    "en": "Use the buttons or keyboard arrows to move between slides.",
+    "es": "Usa los botones o las flechas del teclado para moverte entre diapositivas."
+  },
+  "previous": {
+    "en": "← Previous",
+    "es": "← Anterior"
+  },
+  "next": {
+    "en": "Next →",
+    "es": "Siguiente →"
+  },
+  "slide-label-prefix": {
+    "en": "Slide",
+    "es": "Diapositiva"
+  }
+}</script>
+  <script src="assets/js/main.js?v=1.2"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const slides = [
-        'assets/img/talk/slide_01.PNG',
-        'assets/img/talk/slide_02.PNG',
-        'assets/img/talk/slide_03.PNG',
-        'assets/img/talk/slide_04.PNG',
-        'assets/img/talk/slide_05.PNG',
-        'assets/img/talk/slide_06.PNG',
-        'assets/img/talk/slide_07.PNG',
-        'assets/img/talk/slide_08.PNG',
-        'assets/img/talk/slide_09.PNG',
-        'assets/img/talk/slide_10.PNG',
-        'assets/img/talk/slide_11.PNG',
-        'assets/img/talk/slide_12.PNG',
-      ];
+      const slides = {
+        en: Array.from({ length: 12 }, (_, i) => `assets/img/talk_en/slide_${String(i + 1).padStart(2, '0')}.PNG`),
+        es: Array.from({ length: 12 }, (_, i) => `assets/img/talk_es/diapo_${i + 1}.PNG`)
+      };
       const img = document.getElementById('talk-slide');
       const label = document.getElementById('talk-page-label');
       const prev = document.getElementById('talk-prev');
       const next = document.getElementById('talk-next');
       let index = 0;
-      const preloaded = slides.map((src) => { const im = new Image(); im.src = src; return im; });
+      let currentLang = localStorage.getItem('site-language') === 'es' ? 'es' : 'en';
 
-      function showSlide(newIndex) {
-        index = Math.max(0, Math.min(slides.length - 1, newIndex));
+      function slideWord() { return currentLang === 'es' ? 'Diapositiva' : 'Slide'; }
+      function currentSlides() { return slides[currentLang] || slides.en; }
+      function preloadDeck(lang) { currentSlides().forEach((src) => { const im = new Image(); im.src = src; }); }
+
+      function showSlide(newIndex, instant = false) {
+        const deck = currentSlides();
+        index = Math.max(0, Math.min(deck.length - 1, newIndex));
         img.classList.remove('is-visible');
         window.setTimeout(() => {
-          img.src = slides[index];
-          img.alt = `Chronos presentation slide ${index + 1}`;
-          label.textContent = `Slide ${index + 1} / ${slides.length}`;
+          img.src = deck[index];
+          img.alt = currentLang === 'es' ? `Diapositiva ${index + 1} de la presentación Chronos` : `Chronos presentation slide ${index + 1}`;
+          label.textContent = `${slideWord()} ${index + 1} / ${deck.length}`;
           prev.disabled = index === 0;
-          next.disabled = index === slides.length - 1;
+          next.disabled = index === deck.length - 1;
           img.classList.add('is-visible');
-        }, 90);
+        }, instant ? 0 : 90);
+      }
+
+      function setTalkLanguage(lang) {
+        currentLang = lang === 'es' ? 'es' : 'en';
+        preloadDeck(currentLang);
+        showSlide(index, true);
       }
 
       prev.addEventListener('click', () => showSlide(index - 1));
@@ -102,8 +165,9 @@
         if (event.key === 'ArrowLeft') { event.preventDefault(); showSlide(index - 1); }
         if (event.key === 'ArrowRight') { event.preventDefault(); showSlide(index + 1); }
       });
+      document.addEventListener('site-language-change', (event) => setTalkLanguage(event.detail?.lang));
       img.addEventListener('load', () => img.classList.add('is-visible'));
-      showSlide(0);
+      setTalkLanguage(currentLang);
     });
   </script>
 </body>

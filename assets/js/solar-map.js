@@ -25,6 +25,31 @@
   let focusAnimation = null;
   let currentSelected = null;
 
+  function getUILanguage() {
+    return localStorage.getItem('site-language') === 'es' ? 'es' : 'en';
+  }
+
+  const uiText = {
+    type: { en: 'Type', es: 'Tipo' },
+    distance: { en: 'Distance', es: 'Distancia' },
+    cluster: { en: 'Cluster', es: 'Cúmulo' },
+    age: { en: 'Age', es: 'Edad' },
+    constellation: { en: 'Constellation', es: 'Constelación' },
+    spectralType: { en: 'Spectral type', es: 'Tipo espectral' },
+    reference: { en: 'Reference', es: 'Referencia' },
+    memberModel: { en: 'Member model', es: 'Modelo de miembros' },
+    namedSeeds: { en: 'Named member seeds', es: 'Semillas de miembros con nombre' },
+    pending: { en: 'Pending SIMBAD', es: 'Pendiente SIMBAD' },
+    clickSelected: { en: 'Click selected: view centred on this cluster. Use Reset view to return to the Sun-centred atlas.', es: 'Selección activa: vista centrada en este cúmulo. Usa Restablecer vista para volver al atlas centrado en el Sol.' },
+    full: { en: 'Full screen map', es: 'Mapa a pantalla completa' },
+    exit: { en: 'Exit full screen', es: 'Salir de pantalla completa' }
+  };
+
+  function t(key) {
+    const lang = getUILanguage();
+    return uiText[key]?.[lang] || uiText[key]?.en || key;
+  }
+
   const scene = new THREE.Scene();
   scene.fog = new THREE.FogExp2(0x081226, 0.00145);
 
@@ -1097,18 +1122,18 @@
     const displayName = (meta.type || '').includes('star') ? formatStarLabel(d.name || 'Object') : (d.name || 'Object');
     selected.innerHTML = `
       <strong>${displayName}</strong>
-      <span>Type: ${meta.type || d.type || d.kind || 'object'}</span>
-      <span>Distance: ${Number(dist).toFixed(dist < 10 ? 2 : 0)} pc</span>
-      ${d.parent_cluster ? `<span>Cluster: ${d.parent_cluster}</span>` : ''}
-      ${d.age_myr ? `<span>Age: ${d.age_myr} Myr</span>` : ''}
-      ${d.constellation ? `<span>Constellation: ${d.constellation}</span>` : ''}
-      ${d.spectral_type ? `<span>Spectral type: ${d.spectral_type}</span>` : ''}
-      ${d.reference_url ? `<span><a href="${d.reference_url}" target="_blank" rel="noopener">Reference</a></span>` : ''}
-      ${d.member_model_status ? `<span>Member model: ${d.member_model_status.replaceAll('_', ' ')}</span>` : ''}
-      ${d.member_seed_count ? `<span>Named member seeds: ${(d.members?.length || 0)} / ${d.member_seed_count} resolved</span>` : ''}
-      ${d.pending_member_names?.length ? `<span>Pending SIMBAD: ${d.pending_member_names.slice(0, 6).join(', ')}${d.pending_member_names.length > 6 ? '…' : ''}</span>` : ''}
+      <span>${t('type')}: ${meta.type || d.type || d.kind || 'object'}</span>
+      <span>${t('distance')}: ${Number(dist).toFixed(dist < 10 ? 2 : 0)} pc</span>
+      ${d.parent_cluster ? `<span>${t('cluster')}: ${d.parent_cluster}</span>` : ''}
+      ${d.age_myr ? `<span>${t('age')}: ${d.age_myr} Myr</span>` : ''}
+      ${d.constellation ? `<span>${t('constellation')}: ${d.constellation}</span>` : ''}
+      ${d.spectral_type ? `<span>${t('spectralType')}: ${d.spectral_type}</span>` : ''}
+      ${d.reference_url ? `<span><a href="${d.reference_url}" target="_blank" rel="noopener">${t('reference')}</a></span>` : ''}
+      ${d.member_model_status ? `<span>${t('memberModel')}: ${d.member_model_status.replaceAll('_', ' ')}</span>` : ''}
+      ${d.member_seed_count ? `<span>${t('namedSeeds')}: ${(d.members?.length || 0)} / ${d.member_seed_count} resolved</span>` : ''}
+      ${d.pending_member_names?.length ? `<span>${t('pending')}: ${d.pending_member_names.slice(0, 6).join(', ')}${d.pending_member_names.length > 6 ? '…' : ''}</span>` : ''}
       <span>X,Y,Z: ${p.X.toFixed(1)}, ${p.Y.toFixed(1)}, ${p.Z.toFixed(1)} pc</span>
-      ${d.isClusterFocus ? `<span class="object-description">Click selected: view centred on this cluster. Use Reset view to return to the Sun-centred atlas.</span>` : ''}
+      ${d.isClusterFocus ? `<span class="object-description">${t('clickSelected')}</span>` : ''}
       ${d.position_note ? `<span class="object-description">${d.position_note}</span>` : ''}
       ${(meta.description || d.description) ? `<span class="object-description">${meta.description || d.description}</span>` : ''}
     `;
@@ -1303,7 +1328,7 @@
 
     document.addEventListener('fullscreenchange', () => {
       if (fullscreenButton) {
-        fullscreenButton.textContent = document.fullscreenElement ? 'Exit full screen' : 'Full screen map';
+        fullscreenButton.textContent = document.fullscreenElement ? t('exit') : t('full');
       }
       setTimeout(resize, 80);
     });
@@ -1333,6 +1358,11 @@
   addConstellationStars();
   addSystems();
   bindUI();
+  document.addEventListener('site-language-change', () => {
+    const fullscreenButton = document.querySelector('[data-action="fullscreen"]');
+    if (fullscreenButton) fullscreenButton.textContent = document.fullscreenElement ? t('exit') : t('full');
+    if (currentSelected) setSelected(currentSelected, selectionLocked);
+  });
   resize();
   setSelected({ userData: { name: 'Sun', type: 'reference star', distance_pc: 0 }, position: new THREE.Vector3() }, false);
   loader?.remove();
